@@ -1,6 +1,6 @@
 site_name: ITS Open Source Process
 site_description: ITS Open Source Process {{ release-number }}
-repo_url: https://github.com/k-vaughn/ITS-open-source
+repo_url: https://github.com/ite-org/NTCIP-8008
 nav:
   - Front Matter:
       - Title Page: index.md
@@ -17,8 +17,8 @@ nav:
   - A Code of Conduct: code-of-conduct.md
   - B Documentation Conventions: documentation-conventions.md
   - C Coding Conventions: coding-conventions.md
-site_url: https://erisbacker-volpe.github.io/NTCIP-8008/
-copyright: <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/k-vaughn/ITS-open-source">ITS Open-Source Process</a> by <span property="cc:attributionName">NTCIP</span> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""></a></p>
+site_url: https://ite-org.github.io/NTCIP-8008/
+copyright: <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/ite-org/NTCIP-8008">ITS Open-Source Process</a> by <span property="cc:attributionName">NTCIP</span> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""></a></p>
 theme:
   name: material
   features:
@@ -31,6 +31,8 @@ theme:
   custom_dir: overrides
   icon:
     repo: fontawesome/brands/github
+    admonition:
+      question: fontawesome/solid/comments
 extra_css:
   - stylesheets/extra.css
   - stylesheets/pdf.css
@@ -59,8 +61,12 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets:
       auto_append:
-        - docs/glossary.md
-  - pymdownx.superfences
+        - resources/glossary.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - toc:
       permalink: true
 extra:
