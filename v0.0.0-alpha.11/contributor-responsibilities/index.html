@@ -1,0 +1,1486 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="ITS Open Source Process {{ release-number }}" name="description"/>
+<link href="https://ite-org.github.io/NTCIP-8008/v0.0.0-alpha.11/contributor-responsibilities/" rel="canonical"/>
+<link href="../commenter-responsibilities/" rel="prev"/>
+<link href="../maintainer-responsibilities/" rel="next"/>
+<link href="../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.6.14" name="generator"/>
+<title>4 Contributor Responsibilities - ITS Open Source Process</title>
+<link href="../assets/stylesheets/main.342714a4.min.css" rel="stylesheet"/>
+<style>:root{--md-admonition-icon--question:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20640%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%206.7.2%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202024%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M208%20352c114.9%200%20208-78.8%20208-176S322.9%200%20208%200%200%2078.8%200%20176c0%2038.6%2014.7%2074.3%2039.6%20103.4-3.5%209.4-8.7%2017.7-14.2%2024.7-4.8%206.2-9.7%2011-13.3%2014.3-1.8%201.6-3.3%202.9-4.3%203.7-.5.4-.9.7-1.1.8l-.2.2C1%20327.2-1.4%20334.4.8%20340.9S9.1%20352%2016%20352c21.8%200%2043.8-5.6%2062.1-12.5%209.2-3.5%2017.8-7.4%2025.2-11.4C134.1%20343.3%20169.8%20352%20208%20352m240-176c0%20112.3-99.1%20196.9-216.5%20207%2024.3%2074.4%20104.9%20129%20200.5%20129%2038.2%200%2073.9-8.7%20104.7-23.9%207.5%204%2016%207.9%2025.2%2011.4%2018.3%206.9%2040.3%2012.5%2062.1%2012.5%206.9%200%2013.1-4.5%2015.2-11.1s-.2-13.8-5.8-17.9l-.2-.2c-.2-.2-.6-.4-1.1-.8-1-.8-2.5-2-4.3-3.7-3.6-3.3-8.5-8.1-13.3-14.3-5.5-7-10.7-15.4-14.2-24.7%2024.9-29%2039.6-64.7%2039.6-103.4%200-92.8-84.9-168.9-192.6-175.5.4%205.1.6%2010.3.6%2015.5z%22/%3E%3C/svg%3E');}</style>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="../stylesheets/extra.css" rel="stylesheet"/>
+<link href="../stylesheets/pdf.css" rel="stylesheet"/>
+<script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#contributor-responsibilities">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+<aside class="md-banner">
+<div class="md-banner__inner md-grid md-typeset">
+<!--  <p class="status-badge proposal">Proposal: This is a newly proposed project that does not yet reflect broad community input</p>
+-->
+<p class="status-badge draft">Draft: This is a draft document that is subject to significant changes at any time</p>
+<!--  <p class="status-badge preliminary">Preliminary: This is a preliminary document and may experience changes prior to finalization</p>
+  <p class="status-badge recommended">Recommended: This document has been recommended for balloting but is not yet approved</p>
+  <p class="status-badge approved">Recommended: This is an approved document</p>
+-->
+</div>
+</aside>
+</div>
+<div data-md-color-scheme="default" data-md-component="outdated" hidden="">
+<aside class="md-banner md-banner--warning">
+<div class="md-banner__inner md-grid md-typeset">
+              
+You're not viewing the latest version.
+<a href="../..">
+<strong>Click here to go to latest.</strong>
+</a>
+</div>
+<script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL(".."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
+</aside>
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="ITS Open Source Process" class="md-header__button md-logo" data-md-component="logo" href=".." title="ITS Open Source Process">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            ITS Open Source Process
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              4 Contributor Responsibilities
+            
+          </span>
+</div>
+</div>
+</div>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/ite-org/NTCIP-8008" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 496 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+<a class="md-header-nav__button md-icon" href="../pdf/NTCIP-8008.pdf" title="PDF">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+<path d="M128,0c-17.6,0-32,14.4-32,32v448c0,17.6,14.4,32,32,32h320c17.6,0,32-14.4,32-32V128L352,0H128z" fill="#E2E5E7"></path>
+<path d="m384 128h96l-128-128v96c0 17.6 14.4 32 32 32z" fill="#B0B7BD"></path>
+<polygon fill="#CAD1D8" points="480 224 384 128 480 128"></polygon>
+<path d="M416,416c0,8.8-7.2,16-16,16H48c-8.8,0-16-7.2-16-16V256c0-8.8,7.2-16,16-16h352c8.8,0,16,7.2,16,16  V416z" fill="#F15642"></path>
+<g fill="#fff">
+<path d="m101.74 303.15c0-4.224 3.328-8.832 8.688-8.832h29.552c16.64 0 31.616 11.136 31.616 32.48 0 20.224-14.976 31.488-31.616 31.488h-21.36v16.896c0 5.632-3.584 8.816-8.192 8.816-4.224 0-8.688-3.184-8.688-8.816v-72.032zm16.88 7.28v31.872h21.36c8.576 0 15.36-7.568 15.36-15.504 0-8.944-6.784-16.368-15.36-16.368h-21.36z"></path>
+<path d="m196.66 384c-4.224 0-8.832-2.304-8.832-7.92v-72.672c0-4.592 4.608-7.936 8.832-7.936h29.296c58.464 0 57.184 88.528 1.152 88.528h-30.448zm8.064-72.912v57.312h21.232c34.544 0 36.08-57.312 0-57.312h-21.232z"></path>
+<path d="m303.87 312.11v20.336h32.624c4.608 0 9.216 4.608 9.216 9.072 0 4.224-4.608 7.68-9.216 7.68h-32.624v26.864c0 4.48-3.184 7.92-7.664 7.92-5.632 0-9.072-3.44-9.072-7.92v-72.672c0-4.592 3.456-7.936 9.072-7.936h44.912c5.632 0 8.96 3.344 8.96 7.936 0 4.096-3.328 8.704-8.96 8.704h-37.248v0.016z"></path>
+</g>
+<path d="m400 432h-304v16h304c8.8 0 16-7.2 16-16v-16c0 8.8-7.2 16-16 16z" fill="#CAD1D8"></path>
+</svg>
+</a></nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<!--
+  Copyright (c) 2016-2024 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+<!-- Determine classes -->
+<!-- Navigation -->
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<!-- Site title -->
+<label class="md-nav__title" for="__drawer">
+<a aria-label="ITS Open Source Process" class="md-nav__button md-logo" data-md-component="logo" href=".." title="Contents">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+</a>
+    Contents
+  </label>
+<!-- Repository information -->
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/ite-org/NTCIP-8008" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 496 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+<!-- Navigation list -->
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+<span class="md-ellipsis">
+    Front Matter
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_1_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_1">
+<span class="md-nav__icon md-icon"></span>
+            Front Matter
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="..">
+<span class="md-ellipsis">
+    Title Page
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../notices/">
+<span class="md-ellipsis">
+    Notices
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../acknowledgements/">
+<span class="md-ellipsis">
+    Acknowledgements
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../foreword/">
+<span class="md-ellipsis">
+    Foreword
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../introduction/">
+<span class="md-ellipsis">
+    Introduction
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../general/">
+<span class="md-ellipsis">
+    1 General
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../overview/">
+<span class="md-ellipsis">
+    2 Overview
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../commenter-responsibilities/">
+<span class="md-ellipsis">
+    3 Commenter Responsibilities
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    4 Contributor Responsibilities
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
+    4 Contributor Responsibilities
+    
+  </span>
+</a>
+<!--
+  Copyright (c) 2016-2024 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+<!-- Determine title -->
+<!-- Table of contents -->
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<!--
+    Check whether the content starts with a level 1 headline. If it does, the
+    top-level anchor must be skipped, since it would be redundant to the link
+    to the current page that is located just above the anchor. Therefore we
+    directly continue with the children of the anchor.
+  -->
+<!-- Table of contents title and list -->
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      4 Contributor Responsibilities
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#overview">
+<span class="md-ellipsis">
+      Overview
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#prerequisites">
+<span class="md-ellipsis">
+      Prerequisites
+    </span>
+</a>
+<nav aria-label="Prerequisites" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#join-the-relevant-working-group">
+<span class="md-ellipsis">
+      Join the relevant working group
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#install-software">
+<span class="md-ellipsis">
+      Install Software
+    </span>
+</a>
+<nav aria-label="Install Software" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#git">
+<span class="md-ellipsis">
+      Git
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#graphical-user-interface">
+<span class="md-ellipsis">
+      Graphical User Interface
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#development-environment">
+<span class="md-ellipsis">
+      Development Environment
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#establish-an-account-on-the-repository-hosting-platform">
+<span class="md-ellipsis">
+      Establish an Account on the Repository Hosting Platform
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#fork-the-repository">
+<span class="md-ellipsis">
+      Fork the repository
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#clone-the-repository">
+<span class="md-ellipsis">
+      Clone the repository
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#claim-an-issue">
+<span class="md-ellipsis">
+      Claim an Issue
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#create-a-branch">
+<span class="md-ellipsis">
+      Create a Branch
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#make-edits">
+<span class="md-ellipsis">
+      Make Edits
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#pull-and-merge-updates">
+<span class="md-ellipsis">
+      Pull and Merge Updates
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#test-the-updates">
+<span class="md-ellipsis">
+      Test the Updates
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#commit-the-update">
+<span class="md-ellipsis">
+      Commit the Update
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#push-the-update-to-contributors-online-repository">
+<span class="md-ellipsis">
+      Push the Update to Contributor's Online Repository
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#make-pull-request">
+<span class="md-ellipsis">
+      Make Pull Request
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cooperate-with-reviewers">
+<span class="md-ellipsis">
+      Cooperate with Reviewers
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-happens-next">
+<span class="md-ellipsis">
+      What Happens Next?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#keeping-branches-up-to-date">
+<span class="md-ellipsis">
+      Keeping Branches Up to Date
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#merge-conflicts">
+<span class="md-ellipsis">
+      Merge Conflicts
+    </span>
+</a>
+<nav aria-label="Merge Conflicts" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#tips-to-prevent-resolving-merge-conflicts-repeatedly">
+<span class="md-ellipsis">
+      Tips to Prevent Resolving Merge Conflicts Repeatedly
+    </span>
+</a>
+<nav aria-label="Tips to Prevent Resolving Merge Conflicts Repeatedly" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1-following-instructions">
+<span class="md-ellipsis">
+      1. Following Instructions
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2-pull-request-form">
+<span class="md-ellipsis">
+      2. Pull Request Form
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3-resolving-merge-conflicts-immediately">
+<span class="md-ellipsis">
+      3. Resolving Merge Conflicts Immediately
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#merge-conflicts-in-the-guestbook-repository">
+<span class="md-ellipsis">
+      Merge Conflicts in the Guestbook Repository
+    </span>
+</a>
+<nav aria-label="Merge Conflicts in the Guestbook Repository" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#resolving-merge-conflicts">
+<span class="md-ellipsis">
+      Resolving Merge Conflicts
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#setup">
+<span class="md-ellipsis">
+      Setup
+    </span>
+</a>
+<nav aria-label="Setup" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#install-git">
+<span class="md-ellipsis">
+      Install Git
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#create-a-github-account">
+<span class="md-ellipsis">
+      Create a GitHub account
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#fork-the-desired-repository">
+<span class="md-ellipsis">
+      Fork the Desired Repository
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#install-gitkraken">
+<span class="md-ellipsis">
+      Install GitKraken
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#clone-repository">
+<span class="md-ellipsis">
+      Clone Repository
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../maintainer-responsibilities/">
+<span class="md-ellipsis">
+    5 Maintainer Responsibilities
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../wg-responsibilities/">
+<span class="md-ellipsis">
+    6 WG Responsibilities
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../code-of-conduct/">
+<span class="md-ellipsis">
+    A Code of Conduct
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../documentation-conventions/">
+<span class="md-ellipsis">
+    B Documentation Conventions
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../coding-conventions/">
+<span class="md-ellipsis">
+    C Coding Conventions
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../examples/">
+<span class="md-ellipsis">
+    D Material for MkDocs Eamples
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<!--
+  Copyright (c) 2016-2024 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+<!-- Determine title -->
+<!-- Table of contents -->
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<!--
+    Check whether the content starts with a level 1 headline. If it does, the
+    top-level anchor must be skipped, since it would be redundant to the link
+    to the current page that is located just above the anchor. Therefore we
+    directly continue with the children of the anchor.
+  -->
+<!-- Table of contents title and list -->
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      4 Contributor Responsibilities
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#overview">
+<span class="md-ellipsis">
+      Overview
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#prerequisites">
+<span class="md-ellipsis">
+      Prerequisites
+    </span>
+</a>
+<nav aria-label="Prerequisites" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#join-the-relevant-working-group">
+<span class="md-ellipsis">
+      Join the relevant working group
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#install-software">
+<span class="md-ellipsis">
+      Install Software
+    </span>
+</a>
+<nav aria-label="Install Software" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#git">
+<span class="md-ellipsis">
+      Git
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#graphical-user-interface">
+<span class="md-ellipsis">
+      Graphical User Interface
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#development-environment">
+<span class="md-ellipsis">
+      Development Environment
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#establish-an-account-on-the-repository-hosting-platform">
+<span class="md-ellipsis">
+      Establish an Account on the Repository Hosting Platform
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#fork-the-repository">
+<span class="md-ellipsis">
+      Fork the repository
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#clone-the-repository">
+<span class="md-ellipsis">
+      Clone the repository
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#claim-an-issue">
+<span class="md-ellipsis">
+      Claim an Issue
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#create-a-branch">
+<span class="md-ellipsis">
+      Create a Branch
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#make-edits">
+<span class="md-ellipsis">
+      Make Edits
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#pull-and-merge-updates">
+<span class="md-ellipsis">
+      Pull and Merge Updates
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#test-the-updates">
+<span class="md-ellipsis">
+      Test the Updates
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#commit-the-update">
+<span class="md-ellipsis">
+      Commit the Update
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#push-the-update-to-contributors-online-repository">
+<span class="md-ellipsis">
+      Push the Update to Contributor's Online Repository
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#make-pull-request">
+<span class="md-ellipsis">
+      Make Pull Request
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cooperate-with-reviewers">
+<span class="md-ellipsis">
+      Cooperate with Reviewers
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-happens-next">
+<span class="md-ellipsis">
+      What Happens Next?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#keeping-branches-up-to-date">
+<span class="md-ellipsis">
+      Keeping Branches Up to Date
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#merge-conflicts">
+<span class="md-ellipsis">
+      Merge Conflicts
+    </span>
+</a>
+<nav aria-label="Merge Conflicts" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#tips-to-prevent-resolving-merge-conflicts-repeatedly">
+<span class="md-ellipsis">
+      Tips to Prevent Resolving Merge Conflicts Repeatedly
+    </span>
+</a>
+<nav aria-label="Tips to Prevent Resolving Merge Conflicts Repeatedly" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1-following-instructions">
+<span class="md-ellipsis">
+      1. Following Instructions
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2-pull-request-form">
+<span class="md-ellipsis">
+      2. Pull Request Form
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3-resolving-merge-conflicts-immediately">
+<span class="md-ellipsis">
+      3. Resolving Merge Conflicts Immediately
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#merge-conflicts-in-the-guestbook-repository">
+<span class="md-ellipsis">
+      Merge Conflicts in the Guestbook Repository
+    </span>
+</a>
+<nav aria-label="Merge Conflicts in the Guestbook Repository" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#resolving-merge-conflicts">
+<span class="md-ellipsis">
+      Resolving Merge Conflicts
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#setup">
+<span class="md-ellipsis">
+      Setup
+    </span>
+</a>
+<nav aria-label="Setup" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#install-git">
+<span class="md-ellipsis">
+      Install Git
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#create-a-github-account">
+<span class="md-ellipsis">
+      Create a GitHub account
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#fork-the-desired-repository">
+<span class="md-ellipsis">
+      Fork the Desired Repository
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#install-gitkraken">
+<span class="md-ellipsis">
+      Install GitKraken
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#clone-repository">
+<span class="md-ellipsis">
+      Clone Repository
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<!-- markdownlint-enable require-heading-body -->
+<div class="section-4">
+<style>
+  .section-4 { counter-set: section 4; }
+</style>
+<h1 class="body" id="contributor-responsibilities">Contributor Responsibilities<a class="headerlink" href="#contributor-responsibilities" title="Permanent link">¶</a></h1>
+<h2 class="body" id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¶</a></h2>
+<p>Contributions on projects using the ITS Open Source Process are always welcome,
+no matter how large or small. However, before contributing, it's important to
+familiarize yourself with the following resources of the project:</p>
+<p>Some of this information is standardized in this document, but specific projects
+can extend or make exceptions to the process and will always have their own
+project-specific goals. Contributors are responsible for being familiar with the
+information contained in the following project files, as stored in the project's
+root directory:</p>
+<ul>
+<li><strong>README.md</strong>: Provides an overview of the specific project,</li>
+<li><strong>CODE_OF_CONDUCT.md</strong>: Identifies the code of conduct for the project, and</li>
+<li><strong>CONTRIBUTING.md</strong>: Identifies project-specific rules for contributing.  </li>
+<li><strong>LICENSE.md</strong>: Identifies the license agreement for project files</li>
+</ul>
+<div class="admonition question">
+<p class="admonition-title">Needs Review</p>
+<p>We need to make sure that our standard license addresses all concerns. To date, it sounds as if CC-BY is a reasonable approach for documentation and BSD 3 clause is acceptable for code. MIBs probably need a custom license that falls in between these two and restricts the types of changes and use.</p>
+</div>
+<p>For projects following the ITS Open-Source Process, the last two files will
+typically only identify exceptions or extensions to the rules defined by this
+document.</p>
+<p>The overall process for contributing to an ITS open-source project is shown in
+Figure 4-1 and described in the remainder of this section.</p>
+<p><img alt="ITS Open-Source Process Overview" src="../_assets/images/process-overview.png"/></p>
+<h2 class="body" id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">¶</a></h2>
+<h3 class="body" id="join-the-relevant-working-group">Join the relevant working group<a class="headerlink" href="#join-the-relevant-working-group" title="Permanent link">¶</a></h3>
+<p>Those wishing to contribute <strong>should</strong> join the relevant working group.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Most projects using the ITS Open-Source Process are led by working
+groups (WGs) within standards development organizations (SDOs). The lead WG
+and SDO is typically identified within the README file in the root directory
+of the project <abbr title="A repository is a central location where code is stored and managed. In open source, repositories are often hosted on platforms like GitHub, GitLab, or Bitbucket. Each repository can contain one or more projects, and contributors can submit changes to the code by making pull requests.">repository</abbr>. Contributors are strongly encouraged to join the
+corresponding working group to promote better communication among community
+members and to develop a common vision for the project.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>The ITS Open-Source Process project is led by the Base Standards and
+Profiles 2 (BSP2) WG of the National Transportation Communications Interface
+Protocols (NTCIP) Joint Committee (JC).</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">NTCIP Guidance</p>
+<p>Within the NTCIP, any interested party can send an
+email to <a href="mailto:ntcip@nema.org">ntcip@nema.org</a>. The email should indicate
+(1) the working group of interest, (2) the stakeholder sector (e.g., infrastructure
+owner operator, other government, consultant, device manufacturer,
+management station developer, etc.), (3) contact information, and (4) a
+short biography.</p>
+</div>
+<h3 class="body" id="install-software">Install Software<a class="headerlink" href="#install-software" title="Permanent link">¶</a></h3>
+<h4 class="body" id="git">Git<a class="headerlink" href="#git" title="Permanent link">¶</a></h4>
+<p>Those wishing to contribute <strong>shall</strong> install Git on their local computer.</p>
+<h4 class="body" id="graphical-user-interface">Graphical User Interface<a class="headerlink" href="#graphical-user-interface" title="Permanent link">¶</a></h4>
+<p>Those wishing to contribute <strong>may</strong> install a graphical user interface (GUI) for
+Git on their local computer.</p>
+<h4 class="body" id="development-environment">Development Environment<a class="headerlink" href="#development-environment" title="Permanent link">¶</a></h4>
+<p>Those wishing to contribute <strong>shall</strong> install the development environment on
+their local computer.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Git is available for all major development platforms, including
+Windows, Mac OS, and Linux. Git allows proper version control among multiple
+contributors. Git can be downloaded from
+<a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a>.</p>
+<p>Git natively uses a command line interface (CLI), which can be difficult for
+beginners. There are a variety of graphical user interfaces (GUIs) that are
+available to assist with interfacing with Git.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Example GUIs for beginners include:</p>
+<ul>
+<li><a href="https://desktop.github.com/download/">GitHub Desktop</a>: Very beginner
+level with minimal user interface</li>
+<li><a href="https://www.sourcetreeapp.com">SourceTree</a>: Beginner-friendly with
+support for advanced Git functionality</li>
+<li><a href="https://www.gitkraken.com/git-client">GitKraken</a>: Beginner-friendly
+with advanced options and modern UI with useful video clips to explain how
+to perform tasks.</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">NTCIP Guidance</p>
+<p>While contributors are allowed to use the CLI or any GUI of their
+preference, this document references GitKraken videos due to(1) the
+user-friendly design of GitKraken, (2) the high-quality help (including
+videos) available for GitKraken.</p>
+</div>
+<h3 class="body" id="establish-an-account-on-the-repository-hosting-platform">Establish an Account on the Repository Hosting Platform<a class="headerlink" href="#establish-an-account-on-the-repository-hosting-platform" title="Permanent link">¶</a></h3>
+<p>Those wishing to contribute <strong>shall</strong> <abbr title="A fork is a copy of a repository. When you fork a repository, you create a new copy of the codebase that you can modify and experiment with without affecting the original codebase.">fork</abbr> the <abbr title="A repository is a central location where code is stored and managed. In open source, repositories are often hosted on platforms like GitHub, GitLab, or Bitbucket. Each repository can contain one or more projects, and contributors can submit changes to the code by making pull requests.">repository</abbr> to their own account.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>All edits are originate within the <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr>'s account and all
+contributions can be traced back to the <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr>.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">NTCIP Guidance</p>
+<p>Create an account on <a href="https://github.com">GitHub</a>. This requires a valid
+email address but is free for open-source work.</p>
+</div>
+<h3 class="body" id="fork-the-repository">Fork the <abbr title="A repository is a central location where code is stored and managed. In open source, repositories are often hosted on platforms like GitHub, GitLab, or Bitbucket. Each repository can contain one or more projects, and contributors can submit changes to the code by making pull requests.">repository</abbr><a class="headerlink" href="#fork-the-repository" title="Permanent link">¶</a></h3>
+<p>Those wishing to contribute <strong>shall</strong> <abbr title="A fork is a copy of a repository. When you fork a repository, you create a new copy of the codebase that you can modify and experiment with without affecting the original codebase.">fork</abbr> the <abbr title="A repository is a central location where code is stored and managed. In open source, repositories are often hosted on platforms like GitHub, GitLab, or Bitbucket. Each repository can contain one or more projects, and contributors can submit changes to the code by making pull requests.">repository</abbr> to their own account.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The main <abbr title="A repository is a central location where code is stored and managed. In open source, repositories are often hosted on platforms like GitHub, GitLab, or Bitbucket. Each repository can contain one or more projects, and contributors can submit changes to the code by making pull requests.">repository</abbr> is shared by the entire open-source community on
+GitHub. Individual contributors are not allowed to directly edit this file
+as that would create a chaotic environment. <a href="https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository">Forking a
+<abbr title="A repository is a central location where code is stored and managed. In open source, repositories are often hosted on platforms like GitHub, GitLab, or Bitbucket. Each repository can contain one or more projects, and contributors can submit changes to the code by making pull requests.">repository</abbr></a>
+creates a copy of the <abbr title="A repository is a central location where code is stored and managed. In open source, repositories are often hosted on platforms like GitHub, GitLab, or Bitbucket. Each repository can contain one or more projects, and contributors can submit changes to the code by making pull requests.">repository</abbr> on the <abbr title="A repository is a central location where code is stored and managed. In open source, repositories are often hosted on platforms like GitHub, GitLab, or Bitbucket. Each repository can contain one or more projects, and contributors can submit changes to the code by making pull requests.">repository</abbr> hosting platform within
+the <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr>'s account. The <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr> can then edit the copied
+<abbr title="A repository is a central location where code is stored and managed. In open source, repositories are often hosted on platforms like GitHub, GitLab, or Bitbucket. Each repository can contain one or more projects, and contributors can submit changes to the code by making pull requests.">repository</abbr> (as described below). The <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr>'s <abbr title="A repository is a central location where code is stored and managed. In open source, repositories are often hosted on platforms like GitHub, GitLab, or Bitbucket. Each repository can contain one or more projects, and contributors can submit changes to the code by making pull requests.">repository</abbr> will inherit
+the visibility of the project being forked (i.e., for open-source projects,
+it will be public). This allows the open-source community to review the
+proposed changes prior to accepting their incorporation into the community
+<abbr title="A repository is a central location where code is stored and managed. In open source, repositories are often hosted on platforms like GitHub, GitLab, or Bitbucket. Each repository can contain one or more projects, and contributors can submit changes to the code by making pull requests.">repository</abbr>.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Github Guidance</p>
+<p>Press the "Fork" button in the upper-right portion of
+the shared <abbr title="A repository is a central location where code is stored and managed. In open source, repositories are often hosted on platforms like GitHub, GitLab, or Bitbucket. Each repository can contain one or more projects, and contributors can submit changes to the code by making pull requests.">repository</abbr>'s home page (e.g.,
+<a href="https://github.com/&lt;account&gt;/&lt;project&gt;">https://github.com/&lt;account&gt;/&lt;project&gt;</a>).
+For complate details, see the <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo">Fork a
+Repository</a>
+article on GitHub help.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Each project has a LICENSE.md file that defines its copyright. Projects are encuraged to use CC-BY for documents, BSD 3-clause for code, and the NTCIP MIB copyright for MIBs.</p>
+</div>
+<h3 class="body" id="clone-the-repository">Clone the <abbr title="A repository is a central location where code is stored and managed. In open source, repositories are often hosted on platforms like GitHub, GitLab, or Bitbucket. Each repository can contain one or more projects, and contributors can submit changes to the code by making pull requests.">repository</abbr><a class="headerlink" href="#clone-the-repository" title="Permanent link">¶</a></h3>
+<p>The <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr> <strong>shall</strong> <abbr title="Cloning is the process used to copy an existing Git repository into a new local directory. The `git clone` command will create a new local directory for the repository, copy all the contents of the specified repository, create the remote tracked branches, and checkout an initial branch locally. By default, Git clone will create a reference to the remote repository called origin.">clone</abbr> (i.e., copy an instance of) the forked
+<abbr title="A repository is a central location where code is stored and managed. In open source, repositories are often hosted on platforms like GitHub, GitLab, or Bitbucket. Each repository can contain one or more projects, and contributors can submit changes to the code by making pull requests.">repository</abbr> to the local machine where edits are to be made.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>While a <abbr title="A fork is a copy of a repository. When you fork a repository, you create a new copy of the codebase that you can modify and experiment with without affecting the original codebase.">fork</abbr> creates a copy on the host platform (which can be viewed
+by others), <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository">cloning your forked
+<abbr title="A repository is a central location where code is stored and managed. In open source, repositories are often hosted on platforms like GitHub, GitLab, or Bitbucket. Each repository can contain one or more projects, and contributors can submit changes to the code by making pull requests.">repository</abbr></a>
+creates a copy of your forked <abbr title="A repository is a central location where code is stored and managed. In open source, repositories are often hosted on platforms like GitHub, GitLab, or Bitbucket. Each repository can contain one or more projects, and contributors can submit changes to the code by making pull requests.">repository</abbr> on a local machine. This allows the
+<abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr> to edit files on a local machine rather than directly in the
+online environment.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">GitKraken Guidance</p>
+<ul>
+<li><a href="https://help.gitkraken.com/gitkraken-desktop/open-clone-init/#cloning-an-existing-project">GitKraken Guidance</a></li>
+</ul>
+</div>
+<h3 class="body" id="claim-an-issue">Claim an Issue<a class="headerlink" href="#claim-an-issue" title="Permanent link">¶</a></h3>
+<p>Before starting on any changes to the project, a <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr> <strong>shall</strong> claim an
+associated <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>.</p>
+<p>A <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr> <strong>shall</strong> not claim an <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> that has the label "triage".</p>
+<p>A new <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr> to a project <strong>may</strong> claim an <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> tagged as <a href="https://github.com/open-sauced/intro/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22">good first
+<abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr></a>,
+or <a href="https://github.com/open-sauced/intro/issues?q=is%3Aissue+is%3Aopen+label%3A%22beginners+only%22">beginners
+only</a>.</p>
+<p>Experienced contributors <strong>shall not</strong> claim issues tagged with the label
+"beginners only".</p>
+<p>Experienced contributors <strong>should</strong> avoid issues tagged with the label "good
+first <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>".</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Taking ownership of an <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>:</p>
+<ul>
+<li>Notifies maintainers that work is starting to address the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>,</li>
+<li>Allows efficient communication by allowing the maintainers and 
+<abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr> to discuss the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> and proposed changes early in the update cycle,</li>
+<li>Provides a historical record of the steps taken to address the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>,</li>
+<li>Helps to block inappropriate pull requests as any <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr> without an 
+associated <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> can be easily rejected. </li>
+</ul>
+<p>When you're new to a project, it's a good idea to start with small, 
+manageable tasks, fixing bugs, adding tests, or updating documentation. 
+These will often be tagged with the text "good first <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>" or 
+"beginners-only". This will help you become familiar with the material and 
+development workflow without getting overwhelmed.  The goal is to reserve 
+at least some of these issues for new contributors or until the end of the 
+project; if everyone solves these problems first, it makes it more 
+challenging for contributors to gain experience.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">GitHub Guidance</p>
+<p>If an <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> is not assigned and it is not labeled with
+"triage", it is generally assumed to be available for anyone to work on.
+Take control of the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> by submitting a comment of <code>.take</code> on the selected
+<abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>). When an <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> is assigned, it will be indicated under the
+"Assignees" section of the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>.</p>
+<p><img alt="Issue assignees section on GitHub" src="../_assets/images/issue-assign.png"/></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Projects can implement additional rules regarding the assignment of
+issues. Always review the project's contributing guidelines to ensure you are
+aware of any variations from this standard process.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you get stuck while working on your changes or need other
+clarification, you can always ask for help using the discussions tab of the
+project. For example, you can get help for the ITS Open-Source Process
+project at the <a href="https://github.com/ite-org/intro/discussions">Discussion
+Tab</a>.</p>
+</div>
+<h3 class="body" id="create-a-branch">Create a Branch<a class="headerlink" href="#create-a-branch" title="Permanent link">¶</a></h3>
+<p>Prior to starting work on a claimed <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>, the <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr> <strong>shall</strong> create a
+separate <abbr title="A branch is a separate version of the code that's created for development purposes. Branches allow contributors to experiment with changes without affecting the main codebase. When changes are ready to be merged into the main codebase, they're typically submitted as a pull request.">branch</abbr> for all edits related to that singlular <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Creating a separate <abbr title="A branch is a separate version of the code that's created for development purposes. Branches allow contributors to experiment with changes without affecting the main codebase. When changes are ready to be merged into the main codebase, they're typically submitted as a pull request.">branch</abbr> facilitates tracking of changes and allows
+easier roll-backs of the project to known states.  </p>
+</div>
+<h3 class="body" id="make-edits">Make Edits<a class="headerlink" href="#make-edits" title="Permanent link">¶</a></h3>
+<p>Once the <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr> has claimed an <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> and has a <abbr title="A branch is a separate version of the code that's created for development purposes. Branches allow contributors to experiment with changes without affecting the main codebase. When changes are ready to be merged into the main codebase, they're typically submitted as a pull request.">branch</abbr> devoted to the
+development of that <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>, the <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr> <strong>shall</strong> make changes in the local
+<abbr title="A branch is a separate version of the code that's created for development purposes. Branches allow contributors to experiment with changes without affecting the main codebase. When changes are ready to be merged into the main codebase, they're typically submitted as a pull request.">branch</abbr> according to project guidelines.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Annex B, C, and D provide preferred guidelines that can be referenced
+for different types of contributions.</p>
+<p>If you have questions or concerns during the process (especially between
+meetings of the corresponding WG), you can use the Discussions tab
+associated with the project. These forums can be very useful in knowledge
+sharing and forming consensus, however, users should be aware that the
+discussions tab does not represent official decisions of the WG.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Avoid addressing any other issues as this (1) makes the change larger and
+delays completion of your primary task, (2) can overlap with changes being
+made by others, and (3) complicates version control by not clearly
+documenting when specific changes were made.
+However, in some cases, it may be appropriate to address multiple small and
+similar issues at once. For example, multiple grammar issues in
+documentation can be grouped into a single <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr>.</p>
+</div>
+<h3 class="body" id="pull-and-merge-updates">Pull and Merge Updates<a class="headerlink" href="#pull-and-merge-updates" title="Permanent link">¶</a></h3>
+<p>Prior to submitting a PR, the <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr> <strong>shall</strong> pull the latest updates
+incorporated into the shared project and <abbr title="Merging is the process of combining changes from one branch into another. When a pull request is accepted and merged, the changes made in the pull request become part of the main codebase.">merge</abbr> these updates into the
+<abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr>'s working <abbr title="A branch is a separate version of the code that's created for development purposes. Branches allow contributors to experiment with changes without affecting the main codebase. When changes are ready to be merged into the main codebase, they're typically submitted as a pull request.">branch</abbr>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Because multiple contributors can be working on the same project
+simultaneously, care must be taken to ensure that each <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr> has the
+latest version of files prior to proposing their changes to be incorporated
+into the shared <abbr title="A repository is a central location where code is stored and managed. In open source, repositories are often hosted on platforms like GitHub, GitLab, or Bitbucket. Each repository can contain one or more projects, and contributors can submit changes to the code by making pull requests.">repository</abbr>. This is done by first pulling any changes from
+the shared <abbr title="A repository is a central location where code is stored and managed. In open source, repositories are often hosted on platforms like GitHub, GitLab, or Bitbucket. Each repository can contain one or more projects, and contributors can submit changes to the code by making pull requests.">repository</abbr> into the <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr>'s forked version and then pulling
+those changes down into the <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr>'s local <abbr title="A branch is a separate version of the code that's created for development purposes. Branches allow contributors to experiment with changes without affecting the main codebase. When changes are ready to be merged into the main codebase, they're typically submitted as a pull request.">branch</abbr>. During this process,
+the Git environment will highlight any conflicts (e.g., if the <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr>
+and someone else changed the same line of the same file). When this occurs,
+the <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr> will need to resolve each conflict prior to finalizing the
+<abbr title="Merging is the process of combining changes from one branch into another. When a pull request is accepted and merged, the changes made in the pull request become part of the main codebase.">merge</abbr>.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">GitHub Help</p>
+<p>To update your local copy, first update your forked (origin) <abbr title="A repository is a central location where code is stored and managed. In open source, repositories are often hosted on platforms like GitHub, GitLab, or Bitbucket. Each repository can contain one or more projects, and contributors can submit changes to the code by making pull requests.">repository</abbr>:</p>
+<p>Go to your forked <abbr title="A repository is a central location where code is stored and managed. In open source, repositories are often hosted on platforms like GitHub, GitLab, or Bitbucket. Each repository can contain one or more projects, and contributors can submit changes to the code by making pull requests.">repository</abbr> on GitHub.
+Click the "Sync <abbr title="A fork is a copy of a repository. When you fork a repository, you create a new copy of the codebase that you can modify and experiment with without affecting the original codebase.">fork</abbr>" button.
+Click the green "Update <abbr title="A branch is a separate version of the code that's created for development purposes. Branches allow contributors to experiment with changes without affecting the main codebase. When changes are ready to be merged into the main codebase, they're typically submitted as a pull request.">branch</abbr>" button.</p>
+<p>Next, pull the latest changes in the main <abbr title="A branch is a separate version of the code that's created for development purposes. Branches allow contributors to experiment with changes without affecting the main codebase. When changes are ready to be merged into the main codebase, they're typically submitted as a pull request.">branch</abbr> in the origin <abbr title="A repository is a central location where code is stored and managed. In open source, repositories are often hosted on platforms like GitHub, GitLab, or Bitbucket. Each repository can contain one or more projects, and contributors can submit changes to the code by making pull requests.">repository</abbr> to
+update your local working <abbr title="A branch is a separate version of the code that's created for development purposes. Branches allow contributors to experiment with changes without affecting the main codebase. When changes are ready to be merged into the main codebase, they're typically submitted as a pull request.">branch</abbr> by following these steps in your terminal:</p>
+<p><code>git checkout YOUR-BRANCH-NAME</code></p>
+<p><code>git pull origin main</code></p>
+</div>
+<h3 class="body" id="test-the-updates">Test the Updates<a class="headerlink" href="#test-the-updates" title="Permanent link">¶</a></h3>
+<p>After pulling and merging the latest updates but prior to submitting the PR, the
+<abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr> <strong>shall</strong> install any necessary dependencies and test the changes to
+ensure that the changes provide the intended operation without any new bugs.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It is critical that updates are tested prior to being incorporated into the
+final code (this includes ensuring that documentation files render correctly).
+Specific projects can define their own testing process and procedures.
+You can find the instructions on how to run a project locally in the README
+file or in the contributing guidelines.</p>
+</div>
+<h3 class="body" id="commit-the-update">Commit the Update<a class="headerlink" href="#commit-the-update" title="Permanent link">¶</a></h3>
+<p>Prior to pushing the proposed changes to online <abbr title="A repository is a central location where code is stored and managed. In open source, repositories are often hosted on platforms like GitHub, GitLab, or Bitbucket. Each repository can contain one or more projects, and contributors can submit changes to the code by making pull requests.">repository</abbr>, the <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr>
+<strong>shall</strong> commit the changes in the working directory.</p>
+<p>The <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr> <strong>may</strong> perform interim commits during the development of the
+proposed changes.</p>
+<p>The <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr> <strong>shall</strong> use the <a href="https://www.conventionalcommits.org/en/v1.0.0/">Conventional Commits</a>
+specification for structuring commit messages.</p>
+<p>Here are some examples of Conventional Commit messages:</p>
+<div class="language-text highlight"><pre><span></span><code>feat: add password reset functionality
+docs: update installation instructions
+chore(build): update dependencies
+fix(login): resolve issue with incorrect password validation
+refactor(api): streamline error handling in user service
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Committing changes ensures that the changes are logged in the <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr>'s
+local git account and is required prior to pushing the material to the
+<abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr>'s online copy.</p>
+</div>
+<h3 class="body" id="push-the-update-to-contributors-online-repository">Push the Update to Contributor's Online Repository<a class="headerlink" href="#push-the-update-to-contributors-online-repository" title="Permanent link">¶</a></h3>
+<p>Once the <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr> has completed the proposed revisions and has created a
+local commit, the <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr> <strong>shall</strong> push the proposed changes to the
+contriutor's online <abbr title="A repository is a central location where code is stored and managed. In open source, repositories are often hosted on platforms like GitHub, GitLab, or Bitbucket. Each repository can contain one or more projects, and contributors can submit changes to the code by making pull requests.">repository</abbr>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The changes need to be posted to the online <abbr title="A repository is a central location where code is stored and managed. In open source, repositories are often hosted on platforms like GitHub, GitLab, or Bitbucket. Each repository can contain one or more projects, and contributors can submit changes to the code by making pull requests.">repository</abbr> so that other
+users can review the changes prior to their incorporation into the shared
+<abbr title="A repository is a central location where code is stored and managed. In open source, repositories are often hosted on platforms like GitHub, GitLab, or Bitbucket. Each repository can contain one or more projects, and contributors can submit changes to the code by making pull requests.">repository</abbr>.</p>
+</div>
+<h3 class="body" id="make-pull-request">Make Pull Request<a class="headerlink" href="#make-pull-request" title="Permanent link">¶</a></h3>
+<p>Once the <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr> has completed the above steps, the <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr> <strong>shall</strong>
+complete a <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr>.</p>
+<p>The <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr>'s <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr> <strong>shall</strong> comply with the selected <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr>
+template for the project, completing each field.</p>
+<p>The <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr> <strong>shall</strong> verify that GitHub does not report any action bot or
+other failures upon submitting the PR.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In order to ensure that changes made to the shared <abbr title="A repository is a central location where code is stored and managed. In open source, repositories are often hosted on platforms like GitHub, GitLab, or Bitbucket. Each repository can contain one or more projects, and contributors can submit changes to the code by making pull requests.">repository</abbr> fit with
+the project plan, follow subittal guidelines, and are free of bugs, it is
+important that they are reviewed before being incorporated. As such, rather
+than allowing each <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr> to push changes to the shared <abbr title="A repository is a central location where code is stored and managed. In open source, repositories are often hosted on platforms like GitHub, GitLab, or Bitbucket. Each repository can contain one or more projects, and contributors can submit changes to the code by making pull requests.">repository</abbr>
+without any review, they <strong>request</strong> the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> to <strong>pull</strong> the proposed
+changes. The request initiates the review process, and if successful, the
+changes will be pulled. The request for the maintainers to pull the updates
+is called a "<a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork">pull
+request</a>"
+(PR). In order to ensure that these requests are valid and useful, they must
+comply with the <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr> template (e.g., identify the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> that the
+change claims to address).</p>
+<p>It is especially important that the PR identifies the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> that the PR
+claims to address and must prefix the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> number with "Fixes #" to ensure
+that the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> is closed once the change is accepted.</p>
+<p>The <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr> will need to correct any errors that occur during the
+submittal process to ensure that the PR is received by the maintainers.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>A PR may be marked as invalid and closed if:</p>
+<ul>
+<li>the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> is not assigned to the <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr> who opened the PR,</li>
+<li>no <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> is linked to the PR,</li>
+<li>the PR template is incomplete, or any section in the template is deleted, or</li>
+<li>changes are made directly in the default (<code>main</code>) <abbr title="A branch is a separate version of the code that's created for development purposes. Branches allow contributors to experiment with changes without affecting the main codebase. When changes are ready to be merged into the main codebase, they're typically submitted as a pull request.">branch</abbr>.</li>
+</ul>
+</div>
+<h3 class="body" id="cooperate-with-reviewers">Cooperate with Reviewers<a class="headerlink" href="#cooperate-with-reviewers" title="Permanent link">¶</a></h3>
+<p>The <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr> <strong>shall</strong> work with the review team to address any questions,
+concerns, or problems that arise.</p>
+<p>The <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr> <strong>may</strong> appeal any direction received from the reviewers to the
+parent WG.</p>
+<p>The <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr> <strong>shall</strong> accept the direction of the review process, including
+any appeals.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>After a <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr> has been submitted, reviewers can have questions
+or concerns (e.g., failure to comply with style guidelines). In addition, if
+multiple proposals are received in a short period, last minute changes can
+cause <abbr title="Merging is the process of combining changes from one branch into another. When a pull request is accepted and merged, the changes made in the pull request become part of the main codebase.">merge</abbr> errors that need to be resolved. The <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr> is typically
+the person most qualified to make revisions to the proposed changes without
+introducing errors. Although expected to be rare, there can be instances
+where the <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr> and reviewers have different opinions about how a
+change should be implemented. The shared project is managed by the entire
+team and the <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr> needs to respect the decisions made by the full
+team.</p>
+</div>
+<h2 class="body" id="what-happens-next">What Happens Next?<a class="headerlink" href="#what-happens-next" title="Permanent link">¶</a></h2>
+<p>After your contribution has been submitted and reviewed, one of the following
+outcomes may occur:</p>
+<ol>
+<li>
+<p><strong>Your contribution is accepted</strong>: If your contribution is approved by the
+   project maintainers, it will be merged into the main <abbr title="A branch is a separate version of the code that's created for development purposes. Branches allow contributors to experiment with changes without affecting the main codebase. When changes are ready to be merged into the main codebase, they're typically submitted as a pull request.">branch</abbr> of the codebase.</p>
+</li>
+<li>
+<p><strong>Your contribution requires changes</strong>: Sometimes, the project maintainers
+   may request changes to your contribution before it can be accepted. This
+   could be due to coding issues, conflicts with other changes, or a need for
+   additional documentation. In this case, make the requested changes and
+   resubmit your <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr>.</p>
+</li>
+<li>
+<p><strong>Your contribution is rejected</strong>: In some cases, your contribution may not
+   align with the project's goals or requirements, or it may not be the best
+   solution to a problem. If your contribution is rejected, don't be
+   discouraged. Take the feedback you received as an opportunity to learn and
+   improve. You can always try contributing to another project or submitting a
+   different contribution to the same project.</p>
+</li>
+</ol>
+<h2 class="body" id="keeping-branches-up-to-date">Keeping Branches Up to Date<a class="headerlink" href="#keeping-branches-up-to-date" title="Permanent link">¶</a></h2>
+<p>It is highly recommended that you update your remote and local branches
+habitually. That way, your <abbr title="A branch is a separate version of the code that's created for development purposes. Branches allow contributors to experiment with changes without affecting the main codebase. When changes are ready to be merged into the main codebase, they're typically submitted as a pull request.">branch</abbr> will have the latest update when merged into
+the <code>main</code> <abbr title="A branch is a separate version of the code that's created for development purposes. Branches allow contributors to experiment with changes without affecting the main codebase. When changes are ready to be merged into the main codebase, they're typically submitted as a pull request.">branch</abbr> of the original (<code>upstream</code>) <abbr title="A repository is a central location where code is stored and managed. In open source, repositories are often hosted on platforms like GitHub, GitLab, or Bitbucket. Each repository can contain one or more projects, and contributors can submit changes to the code by making pull requests.">repository</abbr>.</p>
+<p>The best times to update your branches are before you push your changes to the
+remote <abbr title="A repository is a central location where code is stored and managed. In open source, repositories are often hosted on platforms like GitHub, GitLab, or Bitbucket. Each repository can contain one or more projects, and contributors can submit changes to the code by making pull requests.">repository</abbr> and while you're waiting for your <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr> to be reviewed.</p>
+<p>In general, it is preferrable to make small incremental changes to the project
+and to provide the updated materials as soon as possible after taking control of
+an <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>. The longer the duration between checking out the project and
+submitting a <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr> the higher the chance that another <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr> will
+make competing changes in one of your files, which may need to be manually
+inspected to properly <abbr title="Merging is the process of combining changes from one branch into another. When a pull request is accepted and merged, the changes made in the pull request become part of the main codebase.">merge</abbr> the changes.</p>
+<h2 class="body" id="merge-conflicts">Merge Conflicts<a class="headerlink" href="#merge-conflicts" title="Permanent link">¶</a></h2>
+<p>Merge conflicts are something you'll commonly encounter when contributing to an
+open source project. When two branches have made different changes to the same
+line(s) in the same file(s), Git cannot automatically determine which change to
+keep, resulting in a conflict.</p>
+<p>When a <abbr title="Merging is the process of combining changes from one branch into another. When a pull request is accepted and merged, the changes made in the pull request become part of the main codebase.">merge</abbr> conflict occurs, Git adds conflict markers (<code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>, <code>=======</code>,
+and <code>&gt;&gt;&gt;&gt;&gt;&gt;</code>) to indicate the conflicting lines from different branches.
+Everything between the <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code> and <code>=======</code> is the changes that you worked on
+(current changes). And everything between the <code>=======</code> to <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code> is the
+incoming changes from the remote <code>main</code> <abbr title="A branch is a separate version of the code that's created for development purposes. Branches allow contributors to experiment with changes without affecting the main codebase. When changes are ready to be merged into the main codebase, they're typically submitted as a pull request.">branch</abbr>.</p>
+<p>You need to pay attention to the conflicts and decide how you want to resolve
+them. You can keep only your change, incoming change, or both changes.</p>
+<h3 class="body" id="tips-to-prevent-resolving-merge-conflicts-repeatedly">Tips to Prevent Resolving Merge Conflicts Repeatedly<a class="headerlink" href="#tips-to-prevent-resolving-merge-conflicts-repeatedly" title="Permanent link">¶</a></h3>
+<p>Some open source repositories, such as OpenSauced's
+<a href="https://github.com/open-sauced/guestbook">guestbook</a> and
+<a href="https://github.com/open-sauced/pizza-verse">pizza-verse</a> repositories, have
+high contribution activities in the same files that can cause <abbr title="Merging is the process of combining changes from one branch into another. When a pull request is accepted and merged, the changes made in the pull request become part of the main codebase.">merge</abbr> conflicts.</p>
+<p>Below are some tips to prevent you from resolving <abbr title="Merging is the process of combining changes from one branch into another. When a pull request is accepted and merged, the changes made in the pull request become part of the main codebase.">merge</abbr> conflicts repeatedly
+when contributing to open source projects:</p>
+<h4 class="body" id="1-following-instructions">1. Following Instructions<a class="headerlink" href="#1-following-instructions" title="Permanent link">¶</a></h4>
+<p>Ensure you follow the instructions in the project's README or Contributing
+Guide, and don't miss any step.</p>
+<h4 class="body" id="2-pull-request-form">2. Pull Request Form<a class="headerlink" href="#2-pull-request-form" title="Permanent link">¶</a></h4>
+<p>Complete the template form and fill in all areas when creating a <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr>.</p>
+<h4 class="body" id="3-resolving-merge-conflicts-immediately">3. Resolving Merge Conflicts Immediately<a class="headerlink" href="#3-resolving-merge-conflicts-immediately" title="Permanent link">¶</a></h4>
+<p>If a <abbr title="A branch is a separate version of the code that's created for development purposes. Branches allow contributors to experiment with changes without affecting the main codebase. When changes are ready to be merged into the main codebase, they're typically submitted as a pull request.">branch</abbr> has <abbr title="Merging is the process of combining changes from one branch into another. When a pull request is accepted and merged, the changes made in the pull request become part of the main codebase.">merge</abbr> conflicts that must be resolved, the <abbr title="Merging is the process of combining changes from one branch into another. When a pull request is accepted and merged, the changes made in the pull request become part of the main codebase.">merge</abbr> button is
+automatically disabled. So, maintainers are not able to <abbr title="Merging is the process of combining changes from one branch into another. When a pull request is accepted and merged, the changes made in the pull request become part of the main codebase.">merge</abbr> the <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr>.</p>
+<p>When you notice <abbr title="Merging is the process of combining changes from one branch into another. When a pull request is accepted and merged, the changes made in the pull request become part of the main codebase.">merge</abbr> conflicts in your <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr> or if a <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> asks you
+to resolve <abbr title="Merging is the process of combining changes from one branch into another. When a pull request is accepted and merged, the changes made in the pull request become part of the main codebase.">merge</abbr> conflicts, fix them immediately. The sooner you resolve the
+conflicts, the sooner maintainers can review and <abbr title="Merging is the process of combining changes from one branch into another. When a pull request is accepted and merged, the changes made in the pull request become part of the main codebase.">merge</abbr> your <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr>.</p>
+<h3 class="body" id="merge-conflicts-in-the-guestbook-repository">Merge Conflicts in the Guestbook Repository<a class="headerlink" href="#merge-conflicts-in-the-guestbook-repository" title="Permanent link">¶</a></h3>
+<p>Since the primary purpose of the OpenSauced guestbook is to add your name to
+<code>.all-contributorsrc</code> and the <code>README.md</code> files, there is a high chance that you
+will encounter <abbr title="Merging is the process of combining changes from one branch into another. When a pull request is accepted and merged, the changes made in the pull request become part of the main codebase.">merge</abbr> conflicts.</p>
+<p>The conflicts happen when maintainers have merged pull requests before yours
+while you're working on your changes or waiting for your <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr> to be
+reviewed. And you need to resolve them before your <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr> can be merged.</p>
+<h4 class="body" id="resolving-merge-conflicts">Resolving Merge Conflicts<a class="headerlink" href="#resolving-merge-conflicts" title="Permanent link">¶</a></h4>
+<p>Before resolving <abbr title="Merging is the process of combining changes from one branch into another. When a pull request is accepted and merged, the changes made in the pull request become part of the main codebase.">merge</abbr> conflicts, you must first</p>
+<!-- markdownlint-disable-next-line MD051 -->
+<p><a href="#pull-and-merge-updates">update your branches</a>. Then, follow these steps:</p>
+<ol>
+<li>
+<p>In the <code>.all-contributorsrc</code> file:</p>
+</li>
+<li>
+<p>Click the "Accept Both Change" option on the top of your workspace in VS Code.</p>
+</li>
+<li>
+<p>Move your profile details to the end of the contributors' array and fix
+     anything necessary.</p>
+</li>
+<li>
+<p>In the <code>README.md</code> file:</p>
+</li>
+<li>
+<p>Click the "Accept Incoming Change" option on the top of your workspace in
+     VS Code for each conflict in this file.</p>
+</li>
+<li>
+<p>Run <code>npm run contributors:generate</code>.</p>
+</li>
+</ol>
+<p>You will now see that the all contributors badge has been incremented, and
+   your profile is generated at the end of the contributors' list in the
+   <code>README.md</code> file.</p>
+<ol>
+<li>
+<p>Add and commit your changes.</p>
+<p>git commit -am "Resolve <abbr title="Merging is the process of combining changes from one branch into another. When a pull request is accepted and merged, the changes made in the pull request become part of the main codebase.">merge</abbr> conflicts"</p>
+</li>
+<li>
+<p>Push your commits to your remote <abbr title="A branch is a separate version of the code that's created for development purposes. Branches allow contributors to experiment with changes without affecting the main codebase. When changes are ready to be merged into the main codebase, they're typically submitted as a pull request.">branch</abbr>.</p>
+<p>git push</p>
+</li>
+</ol>
+<h2 class="body" id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link">¶</a></h2>
+<h3 class="body" id="install-git">Install Git<a class="headerlink" href="#install-git" title="Permanent link">¶</a></h3>
+<p>Download and install the <a href="https://git-scm.com">git program</a> appropriate for your
+platform. Using default options should be fine unless you have a particular
+preference (e.g., for text editor).</p>
+<h3 class="body" id="create-a-github-account">Create a GitHub account<a class="headerlink" href="#create-a-github-account" title="Permanent link">¶</a></h3>
+<p>Go to github.com, create an account and sign in</p>
+<h3 class="body" id="fork-the-desired-repository">Fork the Desired Repository<a class="headerlink" href="#fork-the-desired-repository" title="Permanent link">¶</a></h3>
+<h3 class="body" id="install-gitkraken">Install GitKraken<a class="headerlink" href="#install-gitkraken" title="Permanent link">¶</a></h3>
+<p>Recommended: Download and install GitKraken. Link GitKraken to your GitHub Account</p>
+<h3 class="body" id="clone-repository">Clone Repository<a class="headerlink" href="#clone-repository" title="Permanent link">¶</a></h3>
+<p>Make sure to select a directory where you want to store the local copy of the
+<abbr title="A repository is a central location where code is stored and managed. In open source, repositories are often hosted on platforms like GitHub, GitLab, or Bitbucket. Each repository can contain one or more projects, and contributors can submit changes to the code by making pull requests.">repository</abbr>. This directory needs to be empty</p>
+</div>
+<aside class="md-source-file">
+<span class="md-source-file__fact">
+<span class="md-icon" title="Last update">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
+</span>
+<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 19, 2025 16:10:00">May 19, 2025</span>
+</span>
+</aside>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a href="https://github.com/ite-org/NTCIP-8008" property="dct:title" rel="cc:attributionURL">ITS Open-Source Process</a> by <span property="cc:attributionName">NTCIP</span> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" rel="license noopener noreferrer" style="display:inline-block;" target="_blank">CC BY 4.0<img alt="" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"/><img alt="" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"/></a></p>
+</div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "content.status", "content.tooltips", "icons", "navigation.path", "navigation.top"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"alias": true, "default": "latest", "provider": "mike"}}</script>
+<script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
+<script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
+<script src="../javascripts/tablesort.js"></script>
+</body>
+</html>

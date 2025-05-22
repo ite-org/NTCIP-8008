@@ -1,0 +1,146 @@
+body.frontmatter h1 {
+  color: blue;
+  font-weight: bold;
+}
+
+
+/* Add spacing below collapsed navigation sections */
+.md-nav--primary .md-nav__item > .md-nav__link {
+  margin-bottom: 8px;
+}
+
+/* Reset the section counter and prepare for subsections */
+h1 {
+  counter-reset: subsection;
+  /* Reset subsection numbering when a new h1 appears */
+  counter-reset: requirement;
+}
+
+h2 {
+  counter-reset: subsubsection;
+  counter-increment: subsection;
+}
+
+h3 {
+  counter-reset: subsubsubsection;
+  counter-increment: subsubsection;
+}
+
+h4 {
+  counter-reset: subsubsubsubsection;
+  counter-increment: subsubsubsection;
+}
+
+h5 {
+  counter-reset: subsubsubsubsection;
+  counter-increment: subsubsubsection;
+}
+
+/* Section numbering for body */
+h1.body::before {
+  content: "Section " counter(section) " ";
+}
+
+h2.body::before {
+  content: counter(section) "." counter(subsection) " ";
+}
+
+h3.body::before {
+  content: counter(section) "." counter(subsection) "." counter(subsubsection) " ";
+}
+
+h4.body::before {
+  content: counter(section) "." counter(subsection) "." counter(subsubsection) "." counter(subsubsubsection) " ";
+}
+
+h5.body::before {
+  content: counter(section) "." counter(subsection) "." counter(subsubsection) "." counter(subsubsubsection) "." counter(subsubsubsubsection)" ";
+}
+
+/* Section numbering for annex h1 (use upper-alpha) */
+h1.annex::before {
+  content: "Annex " counter(section, upper-alpha) " ";
+}
+
+h2.annex::before {
+  content: counter(section, upper-alpha) "." counter(subsection) " ";
+}
+
+h3.annex::before {
+  content: counter(section, upper-alpha) "." counter(subsection) "." counter(subsubsection) " ";
+}
+
+h4.annex::before {
+  content: counter(section, upper-alpha) "." counter(subsection) "." counter(subsubsection) "." counter(subsubsubsection) " ";
+}
+
+h5.annex::before {
+  content: counter(section, upper-alpha) "." counter(subsection) "." counter(subsubsection) "." counter(subsubsubsection) "." counter(subsubsubsubsection)" ";
+}
+
+p.req::before {
+  text-indent: 30 px;
+  font-weight: bold;
+  counter-increment: requirement;
+  content: "REQ-" counter(section) "." counter(requirement) ": ";
+}
+
+p.opt::before {
+  text-indent: 30 px;
+  font-weight: bold;
+  counter-increment: requirement;
+  content: "OPT-" counter(section) "." counter(requirement) ": ";
+}
+
+.req,
+.opt {
+  margin-left: 60px;
+  margin-bottom: 1em;
+  font-style: italic;
+}
+
+/* General styling for status badges */
+.status-badge {
+  display: inline-block !important;
+  padding: 5px 10px !important;
+  border-radius: 5px !important;
+  font-weight: bold !important;
+  margin-bottom: 1em !important;
+  font-size: 0.9em !important;
+  text-align: center;
+}
+
+/* Proposal - Gray */
+.status-badge.proposal {
+  background-color: #B0B0B0 !important;
+  /* Gray */
+  color: black !important;
+}
+
+/* Draft - Yellow */
+.status-badge.draft {
+  background-color: #FFD700 !important;
+  /* Yellow */
+  color: black !important;
+}
+
+/* Preliminary - Orange */
+.status-badge.preliminary {
+  background-color: #FFA500;
+  /* Orange */
+  color: black;
+}
+
+/* Recommended */
+.status-badge.recommended {
+  background-color: #1E90FF;
+  /* Blue */
+  color: white;
+}
+
+/* Approved - Green */
+.status-badge.approved {
+  background-color: #0AA00A;
+  /* Green */
+  color: white;
+}

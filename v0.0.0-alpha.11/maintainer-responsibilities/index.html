@@ -1,0 +1,2338 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="ITS Open Source Process {{ release-number }}" name="description"/>
+<link href="https://ite-org.github.io/NTCIP-8008/v0.0.0-alpha.11/maintainer-responsibilities/" rel="canonical"/>
+<link href="../contributor-responsibilities/" rel="prev"/>
+<link href="../wg-responsibilities/" rel="next"/>
+<link href="../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.6.14" name="generator"/>
+<title>5 Maintainer Responsibilities - ITS Open Source Process</title>
+<link href="../assets/stylesheets/main.342714a4.min.css" rel="stylesheet"/>
+<style>:root{--md-admonition-icon--question:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20640%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%206.7.2%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202024%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M208%20352c114.9%200%20208-78.8%20208-176S322.9%200%20208%200%200%2078.8%200%20176c0%2038.6%2014.7%2074.3%2039.6%20103.4-3.5%209.4-8.7%2017.7-14.2%2024.7-4.8%206.2-9.7%2011-13.3%2014.3-1.8%201.6-3.3%202.9-4.3%203.7-.5.4-.9.7-1.1.8l-.2.2C1%20327.2-1.4%20334.4.8%20340.9S9.1%20352%2016%20352c21.8%200%2043.8-5.6%2062.1-12.5%209.2-3.5%2017.8-7.4%2025.2-11.4C134.1%20343.3%20169.8%20352%20208%20352m240-176c0%20112.3-99.1%20196.9-216.5%20207%2024.3%2074.4%20104.9%20129%20200.5%20129%2038.2%200%2073.9-8.7%20104.7-23.9%207.5%204%2016%207.9%2025.2%2011.4%2018.3%206.9%2040.3%2012.5%2062.1%2012.5%206.9%200%2013.1-4.5%2015.2-11.1s-.2-13.8-5.8-17.9l-.2-.2c-.2-.2-.6-.4-1.1-.8-1-.8-2.5-2-4.3-3.7-3.6-3.3-8.5-8.1-13.3-14.3-5.5-7-10.7-15.4-14.2-24.7%2024.9-29%2039.6-64.7%2039.6-103.4%200-92.8-84.9-168.9-192.6-175.5.4%205.1.6%2010.3.6%2015.5z%22/%3E%3C/svg%3E');}</style>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="../stylesheets/extra.css" rel="stylesheet"/>
+<link href="../stylesheets/pdf.css" rel="stylesheet"/>
+<script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#maintainer-responsibilities">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+<aside class="md-banner">
+<div class="md-banner__inner md-grid md-typeset">
+<!--  <p class="status-badge proposal">Proposal: This is a newly proposed project that does not yet reflect broad community input</p>
+-->
+<p class="status-badge draft">Draft: This is a draft document that is subject to significant changes at any time</p>
+<!--  <p class="status-badge preliminary">Preliminary: This is a preliminary document and may experience changes prior to finalization</p>
+  <p class="status-badge recommended">Recommended: This document has been recommended for balloting but is not yet approved</p>
+  <p class="status-badge approved">Recommended: This is an approved document</p>
+-->
+</div>
+</aside>
+</div>
+<div data-md-color-scheme="default" data-md-component="outdated" hidden="">
+<aside class="md-banner md-banner--warning">
+<div class="md-banner__inner md-grid md-typeset">
+              
+You're not viewing the latest version.
+<a href="../..">
+<strong>Click here to go to latest.</strong>
+</a>
+</div>
+<script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL(".."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
+</aside>
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="ITS Open Source Process" class="md-header__button md-logo" data-md-component="logo" href=".." title="ITS Open Source Process">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            ITS Open Source Process
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              5 Maintainer Responsibilities
+            
+          </span>
+</div>
+</div>
+</div>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/ite-org/NTCIP-8008" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 496 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+<a class="md-header-nav__button md-icon" href="../pdf/NTCIP-8008.pdf" title="PDF">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+<path d="M128,0c-17.6,0-32,14.4-32,32v448c0,17.6,14.4,32,32,32h320c17.6,0,32-14.4,32-32V128L352,0H128z" fill="#E2E5E7"></path>
+<path d="m384 128h96l-128-128v96c0 17.6 14.4 32 32 32z" fill="#B0B7BD"></path>
+<polygon fill="#CAD1D8" points="480 224 384 128 480 128"></polygon>
+<path d="M416,416c0,8.8-7.2,16-16,16H48c-8.8,0-16-7.2-16-16V256c0-8.8,7.2-16,16-16h352c8.8,0,16,7.2,16,16  V416z" fill="#F15642"></path>
+<g fill="#fff">
+<path d="m101.74 303.15c0-4.224 3.328-8.832 8.688-8.832h29.552c16.64 0 31.616 11.136 31.616 32.48 0 20.224-14.976 31.488-31.616 31.488h-21.36v16.896c0 5.632-3.584 8.816-8.192 8.816-4.224 0-8.688-3.184-8.688-8.816v-72.032zm16.88 7.28v31.872h21.36c8.576 0 15.36-7.568 15.36-15.504 0-8.944-6.784-16.368-15.36-16.368h-21.36z"></path>
+<path d="m196.66 384c-4.224 0-8.832-2.304-8.832-7.92v-72.672c0-4.592 4.608-7.936 8.832-7.936h29.296c58.464 0 57.184 88.528 1.152 88.528h-30.448zm8.064-72.912v57.312h21.232c34.544 0 36.08-57.312 0-57.312h-21.232z"></path>
+<path d="m303.87 312.11v20.336h32.624c4.608 0 9.216 4.608 9.216 9.072 0 4.224-4.608 7.68-9.216 7.68h-32.624v26.864c0 4.48-3.184 7.92-7.664 7.92-5.632 0-9.072-3.44-9.072-7.92v-72.672c0-4.592 3.456-7.936 9.072-7.936h44.912c5.632 0 8.96 3.344 8.96 7.936 0 4.096-3.328 8.704-8.96 8.704h-37.248v0.016z"></path>
+</g>
+<path d="m400 432h-304v16h304c8.8 0 16-7.2 16-16v-16c0 8.8-7.2 16-16 16z" fill="#CAD1D8"></path>
+</svg>
+</a></nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<!--
+  Copyright (c) 2016-2024 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+<!-- Determine classes -->
+<!-- Navigation -->
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<!-- Site title -->
+<label class="md-nav__title" for="__drawer">
+<a aria-label="ITS Open Source Process" class="md-nav__button md-logo" data-md-component="logo" href=".." title="Contents">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+</a>
+    Contents
+  </label>
+<!-- Repository information -->
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/ite-org/NTCIP-8008" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 496 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+<!-- Navigation list -->
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+<span class="md-ellipsis">
+    Front Matter
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_1_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_1">
+<span class="md-nav__icon md-icon"></span>
+            Front Matter
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="..">
+<span class="md-ellipsis">
+    Title Page
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../notices/">
+<span class="md-ellipsis">
+    Notices
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../acknowledgements/">
+<span class="md-ellipsis">
+    Acknowledgements
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../foreword/">
+<span class="md-ellipsis">
+    Foreword
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../introduction/">
+<span class="md-ellipsis">
+    Introduction
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../general/">
+<span class="md-ellipsis">
+    1 General
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../overview/">
+<span class="md-ellipsis">
+    2 Overview
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../commenter-responsibilities/">
+<span class="md-ellipsis">
+    3 Commenter Responsibilities
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../contributor-responsibilities/">
+<span class="md-ellipsis">
+    4 Contributor Responsibilities
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    5 Maintainer Responsibilities
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
+    5 Maintainer Responsibilities
+    
+  </span>
+</a>
+<!--
+  Copyright (c) 2016-2024 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+<!-- Determine title -->
+<!-- Table of contents -->
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<!--
+    Check whether the content starts with a level 1 headline. If it does, the
+    top-level anchor must be skipped, since it would be redundant to the link
+    to the current page that is located just above the anchor. Therefore we
+    directly continue with the children of the anchor.
+  -->
+<!-- Table of contents title and list -->
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      5 Maintainer Responsibilities
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#overview">
+<span class="md-ellipsis">
+      Overview
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#establish-repository">
+<span class="md-ellipsis">
+      Establish Repository
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#configure-project-settings">
+<span class="md-ellipsis">
+      Configure Project Settings
+    </span>
+</a>
+<nav aria-label="Configure Project Settings" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#issues-and-discussions">
+<span class="md-ellipsis">
+      Issues and Discussions
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#pages">
+<span class="md-ellipsis">
+      Pages
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#dependabot">
+<span class="md-ellipsis">
+      Dependabot
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#set-up-project-files">
+<span class="md-ellipsis">
+      Set Up Project Files
+    </span>
+</a>
+<nav aria-label="Set Up Project Files" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#overview_1">
+<span class="md-ellipsis">
+      Overview
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#readmemd-file">
+<span class="md-ellipsis">
+      Readme.md File
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#installation-guidance">
+<span class="md-ellipsis">
+      Installation Guidance
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#code-of-conduct-file">
+<span class="md-ellipsis">
+      Code of Conduct File
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#contributing-file">
+<span class="md-ellipsis">
+      Contributing File
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#license-file">
+<span class="md-ellipsis">
+      License File
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#security-file">
+<span class="md-ellipsis">
+      Security file
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#code-owners-file">
+<span class="md-ellipsis">
+      Code Owners File
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#issue-templates">
+<span class="md-ellipsis">
+      Issue Templates
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#pull-request-templates">
+<span class="md-ellipsis">
+      Pull Request Templates
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#saved-replies">
+<span class="md-ellipsis">
+      Saved Replies
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#gitignore-file">
+<span class="md-ellipsis">
+      Gitignore File
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#mkdocsyml-file">
+<span class="md-ellipsis">
+      Mkdocs.yml File
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#deployyml-file">
+<span class="md-ellipsis">
+      Deploy.yml File
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#index-file">
+<span class="md-ellipsis">
+      Index File
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#extracss-file">
+<span class="md-ellipsis">
+      Extra.css File
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#mainhtml-file">
+<span class="md-ellipsis">
+      Main.html File
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#navhtml-file">
+<span class="md-ellipsis">
+      Nav.html File
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#tochtml-file">
+<span class="md-ellipsis">
+      Toc.html File
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#define-project-structure">
+<span class="md-ellipsis">
+      Define Project Structure
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#issue-triage">
+<span class="md-ellipsis">
+      Issue Triage
+    </span>
+</a>
+<nav aria-label="Issue Triage" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#overview_2">
+<span class="md-ellipsis">
+      Overview
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#triage-pre-assessment">
+<span class="md-ellipsis">
+      Triage Pre-Assessment
+    </span>
+</a>
+<nav aria-label="Triage Pre-Assessment" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#overview_3">
+<span class="md-ellipsis">
+      Overview
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#dealing-with-spam">
+<span class="md-ellipsis">
+      Dealing with Spam
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#insufficient-information-issues">
+<span class="md-ellipsis">
+      Insufficient Information Issues
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#stale-issues">
+<span class="md-ellipsis">
+      Stale Issues
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ensuring-proper-categorization">
+<span class="md-ellipsis">
+      Ensuring Proper categorization
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#triaging-bugs">
+<span class="md-ellipsis">
+      Triaging Bugs
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#triaging-feature-requests">
+<span class="md-ellipsis">
+      Triaging Feature Requests
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#triaging-duplicate-issues">
+<span class="md-ellipsis">
+      Triaging Duplicate Issues
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#triaging-rejected-issues">
+<span class="md-ellipsis">
+      Triaging Rejected Issues
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#reviewing-pull-requests">
+<span class="md-ellipsis">
+      Reviewing Pull Requests
+    </span>
+</a>
+<nav aria-label="Reviewing Pull Requests" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#overview_4">
+<span class="md-ellipsis">
+      Overview
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#pull-request-pre-assessment">
+<span class="md-ellipsis">
+      Pull-Request Pre-Assessment
+    </span>
+</a>
+<nav aria-label="Pull-Request Pre-Assessment" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#spam-pull-requests">
+<span class="md-ellipsis">
+      Spam Pull Requests
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#low-quality-pull-requests">
+<span class="md-ellipsis">
+      Low-Quality Pull Requests
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#stale-pull-requests">
+<span class="md-ellipsis">
+      Stale Pull Requests
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#testing">
+<span class="md-ellipsis">
+      Testing
+    </span>
+</a>
+<nav aria-label="Testing" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#overview_5">
+<span class="md-ellipsis">
+      Overview
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#automated-testing">
+<span class="md-ellipsis">
+      Automated Testing
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#failing-automated-tests">
+<span class="md-ellipsis">
+      Failing Automated Tests
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#code-reviews">
+<span class="md-ellipsis">
+      Code Reviews
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#manual-testing">
+<span class="md-ellipsis">
+      Manual Testing
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#effective-feedback">
+<span class="md-ellipsis">
+      Effective Feedback
+    </span>
+</a>
+<nav aria-label="Effective Feedback" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#missing-tests">
+<span class="md-ellipsis">
+      Missing Tests
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#creating-a-release">
+<span class="md-ellipsis">
+      Creating a Release
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#building-a-community">
+<span class="md-ellipsis">
+      Building a Community
+    </span>
+</a>
+<nav aria-label="Building a Community" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#overview_6">
+<span class="md-ellipsis">
+      Overview
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#promptly-respond-and-address-concerns">
+<span class="md-ellipsis">
+      Promptly Respond and Address Concerns
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#advanced-features">
+<span class="md-ellipsis">
+      Advanced Features
+    </span>
+</a>
+<nav aria-label="Advanced Features" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#overview_7">
+<span class="md-ellipsis">
+      Overview
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#linter">
+<span class="md-ellipsis">
+      Linter
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#code-scanning-tools">
+<span class="md-ellipsis">
+      Code Scanning Tools
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#creating-and-customizing-actions">
+<span class="md-ellipsis">
+      Creating and Customizing Actions
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#projects">
+<span class="md-ellipsis">
+      Projects
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../wg-responsibilities/">
+<span class="md-ellipsis">
+    6 WG Responsibilities
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../code-of-conduct/">
+<span class="md-ellipsis">
+    A Code of Conduct
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../documentation-conventions/">
+<span class="md-ellipsis">
+    B Documentation Conventions
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../coding-conventions/">
+<span class="md-ellipsis">
+    C Coding Conventions
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../examples/">
+<span class="md-ellipsis">
+    D Material for MkDocs Eamples
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<!--
+  Copyright (c) 2016-2024 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+<!-- Determine title -->
+<!-- Table of contents -->
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<!--
+    Check whether the content starts with a level 1 headline. If it does, the
+    top-level anchor must be skipped, since it would be redundant to the link
+    to the current page that is located just above the anchor. Therefore we
+    directly continue with the children of the anchor.
+  -->
+<!-- Table of contents title and list -->
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      5 Maintainer Responsibilities
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#overview">
+<span class="md-ellipsis">
+      Overview
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#establish-repository">
+<span class="md-ellipsis">
+      Establish Repository
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#configure-project-settings">
+<span class="md-ellipsis">
+      Configure Project Settings
+    </span>
+</a>
+<nav aria-label="Configure Project Settings" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#issues-and-discussions">
+<span class="md-ellipsis">
+      Issues and Discussions
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#pages">
+<span class="md-ellipsis">
+      Pages
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#dependabot">
+<span class="md-ellipsis">
+      Dependabot
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#set-up-project-files">
+<span class="md-ellipsis">
+      Set Up Project Files
+    </span>
+</a>
+<nav aria-label="Set Up Project Files" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#overview_1">
+<span class="md-ellipsis">
+      Overview
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#readmemd-file">
+<span class="md-ellipsis">
+      Readme.md File
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#installation-guidance">
+<span class="md-ellipsis">
+      Installation Guidance
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#code-of-conduct-file">
+<span class="md-ellipsis">
+      Code of Conduct File
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#contributing-file">
+<span class="md-ellipsis">
+      Contributing File
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#license-file">
+<span class="md-ellipsis">
+      License File
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#security-file">
+<span class="md-ellipsis">
+      Security file
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#code-owners-file">
+<span class="md-ellipsis">
+      Code Owners File
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#issue-templates">
+<span class="md-ellipsis">
+      Issue Templates
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#pull-request-templates">
+<span class="md-ellipsis">
+      Pull Request Templates
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#saved-replies">
+<span class="md-ellipsis">
+      Saved Replies
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#gitignore-file">
+<span class="md-ellipsis">
+      Gitignore File
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#mkdocsyml-file">
+<span class="md-ellipsis">
+      Mkdocs.yml File
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#deployyml-file">
+<span class="md-ellipsis">
+      Deploy.yml File
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#index-file">
+<span class="md-ellipsis">
+      Index File
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#extracss-file">
+<span class="md-ellipsis">
+      Extra.css File
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#mainhtml-file">
+<span class="md-ellipsis">
+      Main.html File
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#navhtml-file">
+<span class="md-ellipsis">
+      Nav.html File
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#tochtml-file">
+<span class="md-ellipsis">
+      Toc.html File
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#define-project-structure">
+<span class="md-ellipsis">
+      Define Project Structure
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#issue-triage">
+<span class="md-ellipsis">
+      Issue Triage
+    </span>
+</a>
+<nav aria-label="Issue Triage" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#overview_2">
+<span class="md-ellipsis">
+      Overview
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#triage-pre-assessment">
+<span class="md-ellipsis">
+      Triage Pre-Assessment
+    </span>
+</a>
+<nav aria-label="Triage Pre-Assessment" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#overview_3">
+<span class="md-ellipsis">
+      Overview
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#dealing-with-spam">
+<span class="md-ellipsis">
+      Dealing with Spam
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#insufficient-information-issues">
+<span class="md-ellipsis">
+      Insufficient Information Issues
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#stale-issues">
+<span class="md-ellipsis">
+      Stale Issues
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ensuring-proper-categorization">
+<span class="md-ellipsis">
+      Ensuring Proper categorization
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#triaging-bugs">
+<span class="md-ellipsis">
+      Triaging Bugs
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#triaging-feature-requests">
+<span class="md-ellipsis">
+      Triaging Feature Requests
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#triaging-duplicate-issues">
+<span class="md-ellipsis">
+      Triaging Duplicate Issues
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#triaging-rejected-issues">
+<span class="md-ellipsis">
+      Triaging Rejected Issues
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#reviewing-pull-requests">
+<span class="md-ellipsis">
+      Reviewing Pull Requests
+    </span>
+</a>
+<nav aria-label="Reviewing Pull Requests" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#overview_4">
+<span class="md-ellipsis">
+      Overview
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#pull-request-pre-assessment">
+<span class="md-ellipsis">
+      Pull-Request Pre-Assessment
+    </span>
+</a>
+<nav aria-label="Pull-Request Pre-Assessment" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#spam-pull-requests">
+<span class="md-ellipsis">
+      Spam Pull Requests
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#low-quality-pull-requests">
+<span class="md-ellipsis">
+      Low-Quality Pull Requests
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#stale-pull-requests">
+<span class="md-ellipsis">
+      Stale Pull Requests
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#testing">
+<span class="md-ellipsis">
+      Testing
+    </span>
+</a>
+<nav aria-label="Testing" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#overview_5">
+<span class="md-ellipsis">
+      Overview
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#automated-testing">
+<span class="md-ellipsis">
+      Automated Testing
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#failing-automated-tests">
+<span class="md-ellipsis">
+      Failing Automated Tests
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#code-reviews">
+<span class="md-ellipsis">
+      Code Reviews
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#manual-testing">
+<span class="md-ellipsis">
+      Manual Testing
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#effective-feedback">
+<span class="md-ellipsis">
+      Effective Feedback
+    </span>
+</a>
+<nav aria-label="Effective Feedback" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#missing-tests">
+<span class="md-ellipsis">
+      Missing Tests
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#creating-a-release">
+<span class="md-ellipsis">
+      Creating a Release
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#building-a-community">
+<span class="md-ellipsis">
+      Building a Community
+    </span>
+</a>
+<nav aria-label="Building a Community" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#overview_6">
+<span class="md-ellipsis">
+      Overview
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#promptly-respond-and-address-concerns">
+<span class="md-ellipsis">
+      Promptly Respond and Address Concerns
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#advanced-features">
+<span class="md-ellipsis">
+      Advanced Features
+    </span>
+</a>
+<nav aria-label="Advanced Features" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#overview_7">
+<span class="md-ellipsis">
+      Overview
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#linter">
+<span class="md-ellipsis">
+      Linter
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#code-scanning-tools">
+<span class="md-ellipsis">
+      Code Scanning Tools
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#creating-and-customizing-actions">
+<span class="md-ellipsis">
+      Creating and Customizing Actions
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#projects">
+<span class="md-ellipsis">
+      Projects
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<!-- markdownlint-enable require-heading-body -->
+<div class="section-5">
+<style>
+  .section-5 { counter-set: section 5; }
+</style>
+<h1 class="body" id="maintainer-responsibilities">Maintainer Responsibilities<a class="headerlink" href="#maintainer-responsibilities" title="Permanent link">¶</a></h1>
+<h2 class="body" id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¶</a></h2>
+<p>The <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> for an open-source project fulfills many responsibilities,
+including setting up the project, managing issues, reviewing submittals, and
+leading the development community. In addition, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> is often a
+prime <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr>.</p>
+<h2 class="body" id="establish-repository">Establish Repository<a class="headerlink" href="#establish-repository" title="Permanent link">¶</a></h2>
+<p>The <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong> work with the sponsoring SDO to establish the
+open-source <abbr title="A repository is a central location where code is stored and managed. In open source, repositories are often hosted on platforms like GitHub, GitLab, or Bitbucket. Each repository can contain one or more projects, and contributors can submit changes to the code by making pull requests.">repository</abbr> for the project.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>NTCIP repositories are hosted at<a href="https://github.com/ite-org/">https://github.com/ite-org/</a>.</p>
+</div>
+<h2 class="body" id="configure-project-settings">Configure Project Settings<a class="headerlink" href="#configure-project-settings" title="Permanent link">¶</a></h2>
+<h3 class="body" id="issues-and-discussions">Issues and Discussions<a class="headerlink" href="#issues-and-discussions" title="Permanent link">¶</a></h3>
+<p>The <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong> ensure that the issues and discussion pages are enabled
+for the ITS open-source project.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Within GitHub, issues are enabled by default but the discussions tab is
+disabled. To enable, go to the settings tab and select discussions in the
+general section.</p>
+</div>
+<h3 class="body" id="pages">Pages<a class="headerlink" href="#pages" title="Permanent link">¶</a></h3>
+<p>If the project includes documentation, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong> ensure that
+GitHub pages is enabled for the project.</p>
+<div class="admonition note">
+<p class="admonition-title">GitHub Process</p>
+<p>To activate GitHub Pages using MkDocs, create a gh-pages <abbr title="A branch is a separate version of the code that's created for development purposes. Branches allow contributors to experiment with changes without affecting the main codebase. When changes are ready to be merged into the main codebase, they're typically submitted as a pull request.">branch</abbr>. The go to
+the settings tab and select pages from the left-hand menu. Set Source to
+"deploy from a <abbr title="A branch is a separate version of the code that's created for development purposes. Branches allow contributors to experiment with changes without affecting the main codebase. When changes are ready to be merged into the main codebase, they're typically submitted as a pull request.">branch</abbr>" and then select the "gh-pages" <abbr title="A branch is a separate version of the code that's created for development purposes. Branches allow contributors to experiment with changes without affecting the main codebase. When changes are ready to be merged into the main codebase, they're typically submitted as a pull request.">branch</abbr> and the /root directory.</p>
+</div>
+<h3 class="body" id="dependabot">Dependabot<a class="headerlink" href="#dependabot" title="Permanent link">¶</a></h3>
+<p>If the project includes code, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>may</strong> configure Dependabot to
+report issues or create pull requests to update dependencies with security vulnerabilities.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Dependabot is a GitHub feature that monitors the project's dependencies and
+reports any possible security vulnerabilities. To learn more about this feature,
+please read through the <a href="https://docs.github.com/en/code-security/getting-started/dependabot-quickstart-guide">GitHub documentation</a>.</p>
+</div>
+<h2 class="body" id="set-up-project-files">Set Up Project Files<a class="headerlink" href="#set-up-project-files" title="Permanent link">¶</a></h2>
+<!-- markdownlint-disable-next-line MD024 -->
+<h3 class="body" id="overview_1">Overview<a class="headerlink" href="#overview_1" title="Permanent link">¶</a></h3>
+<p>The <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong> ensure the following files are provided in the
+<abbr title="A repository is a central location where code is stored and managed. In open source, repositories are often hosted on platforms like GitHub, GitLab, or Bitbucket. Each repository can contain one or more projects, and contributors can submit changes to the code by making pull requests.">repository</abbr> when starting the project and maintained throughout the project:</p>
+<ul>
+<li>README.md</li>
+<li>CODE_OF_CONDUCT.md</li>
+<li>CONTRIBUTING.md</li>
+<li>LICENSE.md</li>
+<li>SECURITY.md</li>
+<li>.github/CODEOWNERS</li>
+<li>appropriate <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> templates in .github/ISSUE_TEMPLATE/</li>
+<li>appropriate PR temapltes in .github/PULL_REQUEST_TEMPLATE/</li>
+<li>appropriate saved replies</li>
+</ul>
+<p>Additionally, if the site includes documentation, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong>
+ensure the following files are provided in the <abbr title="A repository is a central location where code is stored and managed. In open source, repositories are often hosted on platforms like GitHub, GitLab, or Bitbucket. Each repository can contain one or more projects, and contributors can submit changes to the code by making pull requests.">repository</abbr> when starting the
+project and maintained throughout the project:</p>
+<ul>
+<li>.gitignore</li>
+<li>mkdocs.yml</li>
+<li>.github/workflows/deploy.yml (generates the documentation)</li>
+<li><abbr title='Docs is an abbreviation for "documentation". It primarily explains how to implement and use a product or an open source project. It also provides information on how to contribute to the project and expectations for contributors. Documentation is often written using [Markdown](https://www.markdownguide.org/), a lightweight markup language.'>docs</abbr>/index.md</li>
+<li><abbr title='Docs is an abbreviation for "documentation". It primarily explains how to implement and use a product or an open source project. It also provides information on how to contribute to the project and expectations for contributors. Documentation is often written using [Markdown](https://www.markdownguide.org/), a lightweight markup language.'>docs</abbr>/stylesheets/extra.css</li>
+<li>overrides/main.html (adds a status badge to the page)</li>
+<li>overrides/partials/nav.html (changes the naviation heading to be "Contents")</li>
+<li>overrides/partials/toc.html (changes TOC heading to be the document name)</li>
+</ul>
+<p>Finally, the site <strong>shall</strong> include installation guidance, which <strong>may</strong> be
+contained in the README.md file, a separate INSTALLATION.md file, or in project
+documentation.</p>
+<div class="admonition note">
+<p class="admonition-title">GitHub Help</p>
+<p>A template <abbr title="A repository is a central location where code is stored and managed. In open source, repositories are often hosted on platforms like GitHub, GitLab, or Bitbucket. Each repository can contain one or more projects, and contributors can submit changes to the code by making pull requests.">repository</abbr> containing all of these files, which can be used to
+initialize new projects, is stored on the <a href="https://github.com/ite-org/open-source-template">ITE GitHub Site</a>.</p>
+</div>
+<h3 class="body" id="readmemd-file">Readme.md File<a class="headerlink" href="#readmemd-file" title="Permanent link">¶</a></h3>
+<p>The README.md file <strong>shall</strong> contain an introduction to the open-source project.
+A good readme file should be clear, concise, up-to-date, and detailed. This file
+is located in your root directory and is displayed as the homepage of the
+<abbr title="A repository is a central location where code is stored and managed. In open source, repositories are often hosted on platforms like GitHub, GitLab, or Bitbucket. Each repository can contain one or more projects, and contributors can submit changes to the code by making pull requests.">repository</abbr> within GitHub.</p>
+<p>The README.md file <strong>shall</strong> contain the following information:</p>
+<ul>
+<li>project title</li>
+<li>information on how to access the current documentation for the project</li>
+<li>information on how to access prior releases of the project</li>
+<li>project summary, including its status and overview</li>
+<li>Acknowledgements of relevant funding sources, sponsors, and other open-source projects</li>
+<li>installation guidance</li>
+<li>tech and tools used in the project</li>
+<li>link to the code of conduct</li>
+<li>link to discussion forum for the project</li>
+<li>link to the issues page for the project and the types of issues accepted for
+the project</li>
+<li>link to the contributing guidelines</li>
+<li>link to the open source license</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A README file is written in the <a href="https://www.markdownguide.org/">Markdown</a>
+language, a popular language used in open source documentation like READMEs.
+The readme file does not use any of the special codes introduced by MkDocs or
+Materials for MkDocs.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Examples of good README files</p>
+</div>
+<ul>
+<li><a href="https://github.com/open-sauced/app/blob/beta/README.md">OpenSauced App</a></li>
+<li><a href="https://github.com/withastro/astro/blob/main/README.md">Astro documentation</a></li>
+<li><a href="https://github.com/freeCodeCamp/freeCodeCamp/blob/main/README.md">freeCodeCamp</a></li>
+<li><a href="https://github.com/ite-org/NTCIP-8008/blob/main/README.md">ITS Open-Source Process</a></li>
+</ul>
+<h3 class="body" id="installation-guidance">Installation Guidance<a class="headerlink" href="#installation-guidance" title="Permanent link">¶</a></h3>
+<p>The installation guidance <strong>may</strong> be contained within the README.md file (e.g.,
+if it is simple), be a separate file, or reference a section within the project documentation.</p>
+<p>This guide identifies the tools and technology used by the project and includes
+instructions for the following:</p>
+<ul>
+<li>forking the <abbr title="A repository is a central location where code is stored and managed. In open source, repositories are often hosted on platforms like GitHub, GitLab, or Bitbucket. Each repository can contain one or more projects, and contributors can submit changes to the code by making pull requests.">repository</abbr></li>
+<li>cloning the <abbr title="A repository is a central location where code is stored and managed. In open source, repositories are often hosted on platforms like GitHub, GitLab, or Bitbucket. Each repository can contain one or more projects, and contributors can submit changes to the code by making pull requests.">repository</abbr></li>
+<li>installing the dependencies</li>
+<li>setting up the environment variables</li>
+<li>setting up the database, if applicable</li>
+<li>running the project locally</li>
+</ul>
+<p>The best way to test your guide is by setting up the project locally using your guide.
+If you encounter issues getting your project to work, you will discover it quickly
+and can update the documentation to add or clarify the missing piece.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p><a href="https://opensauced.pizza/docs/contributing/introduction-to-contributing/">OpenSauced Contributing Guidelines</a></p>
+</div>
+<h3 class="body" id="code-of-conduct-file">Code of Conduct File<a class="headerlink" href="#code-of-conduct-file" title="Permanent link">¶</a></h3>
+<p>The CODE_OF_CONDUCT.md file <strong>shall</strong> define the rules and behaviors that are to
+be followed for the project.</p>
+<p>The CODE_OF_CONDUCT.md file <strong>should</strong> consist of a reference to the <a href="../code-of-conduct/">ITS Open-Source
+Code of Conduct</a> with any exceptions and extensions identified.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It is expected that exceptions and extensions to the code of conduct will be
+rare.</p>
+</div>
+<h3 class="body" id="contributing-file">Contributing File<a class="headerlink" href="#contributing-file" title="Permanent link">¶</a></h3>
+<p>The CONTRIBUTING.md file <strong>shall</strong> define the rules for contributing to the project.</p>
+<p>The CONTRIBUTING.md file <strong>should</strong> consist of a reference to the
+<a href="../contributor-responsibilities/">ITS Open-Source Contributor Responsibilities</a>
+with any exceptions and extensions identified.</p>
+<p>The CONTRIBUTING.md file <strong>should</strong> identify specific types of conventions that
+apply to the project.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>The ITS Open-Source Process project only has documentation and while the resulting
+specification discusses coding conventions, the project does not include any
+code, ASN.1 or MIBs.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Areas where exceptions and extensions are expected to occur include:</p>
+<ul>
+<li>documentation conventions (e.g., extensions for consistency in presenting
+project-specific information),</li>
+<li>coding conventions (e.g., for languages not discussed in the ITE Open Source
+Process documentation, special naming conventions),</li>
+<li>testing and <abbr title="Linting is the process of running a program that will analyze code for potential errors. A popular linting tool used frequently is ESLint. You can setup an action to run ESlint against each pull request that comes in to check for potential errors before it makes it into production.">linting</abbr> requirements</li>
+<li>the process to claim ownership pf issues (e.g., WG approvals),</li>
+<li>guidelines for commit conventions</li>
+<li>requirements for creating pull requests (e.g., fields that need to be included),
+  and</li>
+<li>requirements for pull requests to be approved (e.g., WG approvals)</li>
+</ul>
+</div>
+<h3 class="body" id="license-file">License File<a class="headerlink" href="#license-file" title="Permanent link">¶</a></h3>
+<div class="admonition quote">
+<p class="admonition-title">Per <a href="https://opensource.guide/legal/">The Legal Side of Open Source</a></p>
+<p>Making your GitHub project public is not the same as licensing your project.
+Public projects are covered by <a href="https://docs.github.com/en/site-policy/github-terms/github-terms-of-service#3-ownership-of-content-right-to-post-and-license-grants">GitHub’s Terms of Service</a>,
+which allows others to view and <abbr title="A fork is a copy of a repository. When you fork a repository, you create a new copy of the codebase that you can modify and experiment with without affecting the original codebase.">fork</abbr> your project, but your work otherwise
+comes with no permissions.</p>
+<p>If you want others to use, distribute, modify, or contribute back to your project,
+you need to include an open source license. For example, someone cannot legally
+use any part of your GitHub project in their code, even if it’s public, unless
+you explicitly give them the right to do so.</p>
+</div>
+<p>The LICENSE file <strong>shall</strong> be a well-known Free and Open Source license.</p>
+<p>For NTCIP documentation projects, including standards and ASN.1, the license <strong>should</strong>
+be <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The CC BY license is designed for documentation and other creative works where
+uers are allowed to use, distribute, modify, and contribute but any derivative
+works are required to give attribution to the source of the material and cannot
+"implicitly or explicitly assert or imply any connection with, sponsorship, or
+endorsement by the licensor."</p>
+</div>
+<p>For NTCIP projects involving code for a computer program, the license <strong>should</strong>
+be the <a href="https://www.gnu.org/licenses/lgpl-3.0.en.html">Gnu Lesser General Public License Version 3</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The LGPL v3 license is designed for compilable software that runs on a machine.
+Like the CC BY license, it allows uers to use, distribute, modify, and contribute
+material as long as they give attribution to the original source and does not
+provide any rights to the names, trademarks, or logos of the original source.</p>
+</div>
+<h3 class="body" id="security-file">Security file<a class="headerlink" href="#security-file" title="Permanent link">¶</a></h3>
+<p>The SECURITY.md file <strong>shall</strong> indicate how to provide reports of security issues
+through private channels to prevent exposure of the vulnerabilities prior to
+their fix.</p>
+<h3 class="body" id="code-owners-file">Code Owners File<a class="headerlink" href="#code-owners-file" title="Permanent link">¶</a></h3>
+<p>The .github/CODEOWNERS file <strong>shall</strong> conform to the rules defined in the
+<a href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners">official GitHub documentation</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+</div>
+<p>This ensures that the correct maintainers are notified when PRs are submitted.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>By opting-in to "require approval" and "require review from code owners", a
+WG can require a majority of voting members of the WG to approve any <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr>
+before it can be merged into the protected <abbr title="A branch is a separate version of the code that's created for development purposes. Branches allow contributors to experiment with changes without affecting the main codebase. When changes are ready to be merged into the main codebase, they're typically submitted as a pull request.">branch</abbr>. This can reduce the chance
+of merging pull requests that can break production.</p>
+</div>
+<h3 class="body" id="issue-templates">Issue Templates<a class="headerlink" href="#issue-templates" title="Permanent link">¶</a></h3>
+<p>The <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong> define appropriate <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> forms.</p>
+<p>The <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong> develop the forms using YAML per the
+<a href="https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms">GitHub instructions</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Issue forms allow the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> to ensure commenters provide key information
+(or at least provide text for specific fields) when they report issues making
+the triage process, and the review of pull requests easier to perform. Additionally,
+future contributors can benefit from these templates by understanding the history
+of changes made, which can help them debug or understand the code involved.</p>
+<p>You can create various <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> forms, such as <abbr title="A bug refers to an error, flaw, or defect in code that adversely affects the proper functioning of the software. Open source projects often depend on contributions from the community to identify and rectify these bugs.">bug</abbr> reports, feature requests,
+documentation updates, etc. Each form can specify which fields are required,
+such as the steps for reproducing the <abbr title="A bug refers to an error, flaw, or defect in code that adversely affects the proper functioning of the software. Open source projects often depend on contributions from the community to identify and rectify these bugs.">bug</abbr> or a details section for a feature
+request. The form can also be designed to automatically attach specific labels
+like<code>feature</code>, <code>needs triage</code>, or <code>bug</code> to quickly identify the type of <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p><a href="https://github.com/ite-org/NTCIP-8008/tree/main/.github/ISSUE_TEMPLATE/documentation_bug.yml"><code>.github/ISSUE_TEMPLATE/documentation_bug.yml</code></a>
+or <a href="https://github.com/ite-org/NTCIP-8008/tree/main/.github/ISSUE_TEMPLATE/documentation_enhancement.yml"><code>.github/ISSUE_TEMPLATE/documentation_enhancement.yml</code></a></p>
+</div>
+<h3 class="body" id="pull-request-templates">Pull Request Templates<a class="headerlink" href="#pull-request-templates" title="Permanent link">¶</a></h3>
+<p>The <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong> define appropriate <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr> templates.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>GitHub currently only supports <abbr title="Markdown is a lightweight markup language commonly used for creating formatted text documents. It is widely used for creating documentation and README files in software development due to its simplicity and readability.">markdown</abbr> templates for pull requests rather
+than YAML forms. Nonetheless, the templates serve a similar purpose in that
+they guide contributors in providing specific and structured information when
+opening pull requests in your project.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p><a href="https://github.com/ite-org/NTCIP-8008/tree/main/.github/PULL_REQUEST_TEMPLATE/PULL_REQUEST_TEMPLATE.md">.github/PULL_REQUEST_TEMPLATE/PULL_REQUEST_TEMPLATE.md</a></p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can learn more about <a href="https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository">creating a <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr> template</a>
+on the official GitHub documentation.</p>
+</div>
+<p><img alt="PR template example" src="../_assets/images/pr-template.png"/></p>
+<h3 class="body" id="saved-replies">Saved Replies<a class="headerlink" href="#saved-replies" title="Permanent link">¶</a></h3>
+<p>Sometimes, you repeatedly write the same reply to issues or pull requests. Clear
+communication between maintainers and contributors is crucial. So, when you write
+all comments manually, your messages will no longer be consistent and may be unclear.
+You can create saved replies when you frequently respond to issues and pull requests
+with the same comments.</p>
+<p><a href="https://docs.github.com/en/get-started/writing-on-github/working-with-saved-replies/about-saved-replies">Saved replies</a>
+allow you to create a reusable response to issues, pull requests, and discussions
+and use it across repositories. It will save you time responding to contributors
+while keeping the consistency of your message. You can always modify your replies
+if necessary.</p>
+<p>Read the GitHub documentation for complete instructions about how to
+<a href="https://docs.github.com/en/get-started/writing-on-github/working-with-saved-replies/creating-a-saved-reply">create saved replies</a>.</p>
+<p><img alt="Saved replies gif" src="../_assets/gifs/saved-replies.gif"/></p>
+<h3 class="body" id="gitignore-file">Gitignore File<a class="headerlink" href="#gitignore-file" title="Permanent link">¶</a></h3>
+<p>If there are any files that are likely to exist within the project directory
+that should not become a part of the <abbr title="A repository is a central location where code is stored and managed. In open source, repositories are often hosted on platforms like GitHub, GitLab, or Bitbucket. Each repository can contain one or more projects, and contributors can submit changes to the code by making pull requests.">repository</abbr>, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong>
+include a <code>.gitignore</code> file.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Projects that include documentation that is based on MkDocs typically have
+a <code>site</code> directory generated by MkDocs as a part of the process to generate
+a static website for review. This directory is not intended to be part of
+the registry as GitHub will produce its own generated site. In this case,
+the project is to include a <code>.gitignore</code> file that contains the line "site/",
+as for this <a href="https://github.com/ite-org/NTCIP-8008/blob/main/.gitignore">project</a>.</p>
+</div>
+<h3 class="body" id="mkdocsyml-file">Mkdocs.yml File<a class="headerlink" href="#mkdocsyml-file" title="Permanent link">¶</a></h3>
+<p>If the project includes documentation using MkDocs, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong>
+define a <code>mkdocs.yml</code> file.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The mkdocs.yml file defines directives to the mkdocs engine when generating
+the static website. For example, it defines</p>
+<ul>
+<li>name of the site,</li>
+<li>URL of the site,</li>
+<li>navigation menu,</li>
+<li>theme,</li>
+<li>extensions/plugins used, and</li>
+<li>other details</li>
+</ul>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p><a href="https://github.com/ite-org/NTCIP-8008/blob/main/mkdocs.yml">Mkdocs file for ITS Open-Source Process</a></p>
+</div>
+<h3 class="body" id="deployyml-file">Deploy.yml File<a class="headerlink" href="#deployyml-file" title="Permanent link">¶</a></h3>
+<p>If the project includes documentation using MkDocs, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong>
+define a <code>.github/workflows/deploy.yml</code> file that deploys the MkDocs site to
+GitHub Pages.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The deploy.yml file can be used to automate actions when pull requests are
+merged with the project. For example, for projects that use MkDocs, the
+deploy file can ensure that the GitHub Pages site is updated with the new
+material when a <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr> is merged.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p><a href="https://github.com/ite-org/NTCIP-8008/blob/main/.github/workflows/deploy.yml">Deploy file for ITS Open-Source Process</a></p>
+</div>
+<h3 class="body" id="index-file">Index File<a class="headerlink" href="#index-file" title="Permanent link">¶</a></h3>
+<p>If the project includes documentation using MkDocs, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong>
+define a <code>docs/index.md</code> file that provides a cover page for the document.</p>
+<h3 class="body" id="extracss-file">Extra.css File<a class="headerlink" href="#extracss-file" title="Permanent link">¶</a></h3>
+<p>If the project includes documentation using MkDocs, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong>
+define a <code>docs/stylesheets/extra.css</code> file that defines the heading styles to
+be used for the body and the annexes (i.e., adding setion numbers in front of
+headings).</p>
+<p>The <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong> ensure that this badge only changes per the approval
+process defined for the project.</p>
+<h3 class="body" id="mainhtml-file">Main.html File<a class="headerlink" href="#mainhtml-file" title="Permanent link">¶</a></h3>
+<p>If the project includes documentation using MkDocs, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong>
+define a <code>overrides/main.html</code> file that provides a badge that identifies the
+status of the project files.</p>
+<p>The <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong> ensure that this badge only changes per the approval
+process defined for the project.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>By default, MkDocs does not display a status badge. Adding this badge
+ensures that users are aware of the status of the material located on the
+page.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p><a href="https://github.com/ite-org/NTCIP-8008/blob/main/overrides/main.html">Main.html file for ITS Open-Source Process</a></p>
+</div>
+<h3 class="body" id="navhtml-file">Nav.html File<a class="headerlink" href="#navhtml-file" title="Permanent link">¶</a></h3>
+<p>If the project includes documentation using MkDocs, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong>
+define a <code>overrides/partials/nav.html</code> file that overrides the title assigned
+to the left-hand navigation menu to be "Contents".</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>By default, MkDocs entitles the left hand navigation (i.e., navigation of
+pages) with the title of the site. To better align with NTCIP formats, the
+nav.html file is provided to change this to "Contents".</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p><a href="https://github.com/ite-org/NTCIP-8008/blob/main/overrides/partials/nav.html">Nav.html file for ITS Open-Source Process</a></p>
+</div>
+<h3 class="body" id="tochtml-file">Toc.html File<a class="headerlink" href="#tochtml-file" title="Permanent link">¶</a></h3>
+<p>If the project includes documentation using MkDocs, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong>
+define a <code>overrides/partials/toc.html</code> file that overrides the title assigned
+to the navigation menu on the right side of the screen.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>By default, MkDocs entitles the right-hand navigation (i.e., the contents of
+the current page) as "Contents". To better align with NTCIP formats, the
+standard toc.html file changes this to the title of the current page.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p><a href="https://github.com/ite-org/NTCIP-8008/blob/main/overrides/partials/toc.html">Toc.html file for ITS Open-Source Process</a></p>
+</div>
+<h2 class="body" id="define-project-structure">Define Project Structure<a class="headerlink" href="#define-project-structure" title="Permanent link">¶</a></h2>
+<p>Once the project is established, configured, and the loaded with the initial
+project files, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong> establish the plan for the project by
+defining issues along with any appropriate stub files that can provide further
+guidance.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This includes defining the plan for all aspects of the project (e.g.,
+documentation and code).</p>
+</div>
+<h2 class="body" id="issue-triage">Issue Triage<a class="headerlink" href="#issue-triage" title="Permanent link">¶</a></h2>
+<!-- markdownlint-disable-next-line MD024 -->
+<h3 class="body" id="overview_2">Overview<a class="headerlink" href="#overview_2" title="Permanent link">¶</a></h3>
+<p>Once issues are being created for the project, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> will need to
+triage these issues to ensure that they contribute to the project plan and so
+that they can be claimed by contributors.</p>
+<p>Learning to triage issues is essential for any open-source <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr>. This
+involves going through the existing list of open issues and prioritizing them
+in order of importance. Some open issues will be critical <abbr title="A bug refers to an error, flaw, or defect in code that adversely affects the proper functioning of the software. Open source projects often depend on contributions from the community to identify and rectify these bugs.">bug</abbr> fixes, while others
+might be nice to have feature requests. Sometimes, you might have issues opened
+for things that are not a right fit for the project.</p>
+<h3 class="body" id="triage-pre-assessment">Triage Pre-Assessment<a class="headerlink" href="#triage-pre-assessment" title="Permanent link">¶</a></h3>
+<!-- markdownlint-disable-next-line MD024 -->
+<h4 class="body" id="overview_3">Overview<a class="headerlink" href="#overview_3" title="Permanent link">¶</a></h4>
+<p>Prior to performing any detailed triage, it is important to screen reported issues
+that are not appropriate for further investigation.</p>
+<h4 class="body" id="dealing-with-spam">Dealing with Spam<a class="headerlink" href="#dealing-with-spam" title="Permanent link">¶</a></h4>
+<p>When a comment is spam, clearly combative, or unhelpful, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>should</strong>
+avoid direct engagement, label the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> as <code>spam</code>, close the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>, and move on.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>This project is terrible! Nothing works, and your code is garbage. I can't
+believe anyone would use this. Fix it ASAP!!!</p>
+</div>
+<h4 class="body" id="insufficient-information-issues">Insufficient Information Issues<a class="headerlink" href="#insufficient-information-issues" title="Permanent link">¶</a></h4>
+<p>When a comment does not provide concrete details about the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr>
+<strong>should</strong> respond by requesting more information.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>If it is a <abbr title="A bug refers to an error, flaw, or defect in code that adversely affects the proper functioning of the software. Open source projects often depend on contributions from the community to identify and rectify these bugs.">bug</abbr> report, ask for more details on reproducing it. If it is a
+feature request, ask for clarification on style or functionality changes.</p>
+</div>
+<p>If the commenter does not respond within a week, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>should</strong> message
+them again for more details.</p>
+<p>If a few weeks pass and the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> is not considered critical, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr>
+<strong>may</strong> close the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>.</p>
+<h4 class="body" id="stale-issues">Stale Issues<a class="headerlink" href="#stale-issues" title="Permanent link">¶</a></h4>
+<p>The <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>may</strong> may label issues that have not been worked on for months
+as <code>stale</code>.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>An <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> reported on a portion of a project that has been significantly
+edited by other contributions.</p>
+</div>
+<p>If the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> wishes to resurrect a <code>stale</code> <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong>
+go through the normal triage process, including adding and removing labels as appropriate.</p>
+<p>If the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> believes a <code>stale</code> <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> no longer applies, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr>
+<strong>should</strong> close the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>. This process <strong>may</strong> be automated (e.g., using an
+action like <a href="https://github.com/actions/stale">Close Stale Issues and PRs</a>.</p>
+<h4 class="body" id="ensuring-proper-categorization">Ensuring Proper categorization<a class="headerlink" href="#ensuring-proper-categorization" title="Permanent link">¶</a></h4>
+<p>For issues that have sufficient information and are not <code>spam</code> or <code>stale</code>, the
+<abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong> add and/or remove labels as appropriate for proper management.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Most ITS standardization projects are expected to have a small number of
+contributors, in which case, the following set of labels are generally
+appropriate. Projects with more contributors should consider a fuller range
+of labels as adopted by the open-source community.</p>
+</div>
+<p>The following labels <strong>should</strong> be considered for most specification projects:</p>
+<ol>
+<li>
+<p>General Type Labels</p>
+<ul>
+<li><strong>github automation:</strong> an <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> related to the automated github scripts in
+   testing or generating the documentation.</li>
+<li><strong>question:</strong> Indicates a general inquiry or a request for clarification about
+   how something works. Questions should be moved to the discussion tab, but the
+   <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> can be labeled with <code>question</code> and closed.</li>
+</ul>
+</li>
+<li>
+<p>Type Labels for Documentation</p>
+<ul>
+<li><strong>documentation <abbr title="A bug refers to an error, flaw, or defect in code that adversely affects the proper functioning of the software. Open source projects often depend on contributions from the community to identify and rectify these bugs.">bug</abbr>:</strong> Identifies a reported problem or flaw in the documentation.</li>
+<li><strong>documentation enhancement:</strong> Refers to a suggestion or request to improve
+   or add informative text in the documentation.</li>
+<li><strong>new user need:</strong> Suggests a new user need to be added in the document.</li>
+<li><strong>user need modification:</strong> Suggests a modification to a user need in the document.</li>
+<li><strong>new requirement:</strong> Suggests a new requirement to be added in the document.</li>
+<li><strong>requirement modification:</strong> Suggests a modification to a requirement in
+   the document.</li>
+<li><strong>dialog modification:</strong> Suggests a modification to a dialog in the document.</li>
+<li><strong>ASN.1 modification:</strong> A change to the ASN.1 or MIB.</li>
+</ul>
+</li>
+<li>
+<p>Type Labels for Code</p>
+<ul>
+<li><strong><abbr title="A bug refers to an error, flaw, or defect in code that adversely affects the proper functioning of the software. Open source projects often depend on contributions from the community to identify and rectify these bugs.">bug</abbr>:</strong> Identifies a reported problem, flaw, or unexpected behavior in the
+code.</li>
+<li><strong>enhancement:</strong> Refers to a suggestion or request to improve or add
+features to the project.</li>
+<li><strong>feature:</strong> Used for issues proposing new functionality or significant changes.</li>
+<li><strong>refactor:</strong> A change in the codebase that improves its structure or
+readability without altering its functionality.</li>
+<li><strong>test:</strong> Issues related to unit tests, integration tests, or overall
+testing improvements.</li>
+</ul>
+</li>
+<li>Priority Labels (Help prioritize issues based on urgency or importance)<ul>
+<li><strong>critical:</strong> Indicates urgent <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> related to an existing release that
+needs to be addressed immediately (e.g., perhaps requiring its own release
+to formalize in a timely manner).</li>
+<li><strong>high priority:</strong> Indicates urgent <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> that needs to be addressed as
+soon as possible to allow for other tasks to proceed  for the current
+update but not critical.</li>
+<li><strong>medium priority:</strong> Important <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> to address prior to next release that
+relates to functionality but not high priority.</li>
+<li><strong>low priority:</strong> Non-urgent issues that may be tackled if there’s extra
+time or resources available.</li>
+</ul>
+</li>
+<li>Status Labels (Track the progress of an <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> or <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr>)<ul>
+<li><strong>in progress:</strong> The <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> is currently being worked on.</li>
+<li><strong>blocked:</strong> Work on this <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> is delayed or cannot proceed due to a
+dependency or external factor.</li>
+<li><strong>needs discussion:</strong> Indicates that the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> or <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr> requires
+further conversation or clarification before proceeding.</li>
+<li><strong>triage:</strong> Newly created issues that need to be reviewed, categorized,
+and prioritized.</li>
+<li><strong>ready for review:</strong> The <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr> is awaiting review by project maintainers.</li>
+<li><strong>duplicate:</strong> Marks an <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> as being identical or closely related to an
+already existing <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>.</li>
+<li><strong>wontfix:</strong> Indicates that the maintainers have decided not to address
+the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>, either due to scope, relevance, or priority.</li>
+</ul>
+</li>
+<li>Difficulty or Effort Labels (Classify the expected effort required to
+address the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>)<ul>
+<li><strong>good first <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>:</strong> Meant for new contributors; these are usually
+easy-to-solve problems with clear instructions.</li>
+<li><strong>beginner-friendly:</strong> Similar to “good first <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>,” these are relatively
+simple problems that beginners can address.</li>
+<li><strong>help wanted:</strong> Indicates that maintainers need assistance with the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>,
+open to contributions.</li>
+<li><strong>complex:</strong> Issues that are challenging, requiring significant experience
+or effort to resolve.</li>
+</ul>
+</li>
+<li>Version or Milestone Labels (Track issues by release or milestone)<ul>
+<li><strong>compatibility:</strong> Associates an <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> or <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr> with a specific
+version or release milestone.</li>
+<li><strong>next release:</strong> Indicates that the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> is planned for inclusion in the
+upcoming release.</li>
+<li><strong>future:</strong> Refers to issues or features planned for future releases
+beyond the current roadmap.</li>
+</ul>
+</li>
+</ol>
+<h3 class="body" id="triaging-bugs">Triaging Bugs<a class="headerlink" href="#triaging-bugs" title="Permanent link">¶</a></h3>
+<p>The <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>should</strong> verify the existance of any reported <abbr title="A bug refers to an error, flaw, or defect in code that adversely affects the proper functioning of the software. Open source projects often depend on contributions from the community to identify and rectify these bugs.">bug</abbr>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> expects to assign the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> to himself, the verification
+step can be postponed until the action is undertaken to correct the <abbr title="A bug refers to an error, flaw, or defect in code that adversely affects the proper functioning of the software. Open source projects often depend on contributions from the community to identify and rectify these bugs.">bug</abbr>. If
+the <abbr title="A bug refers to an error, flaw, or defect in code that adversely affects the proper functioning of the software. Open source projects often depend on contributions from the community to identify and rectify these bugs.">bug</abbr> cannot be verified, reply to the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>'s original poster to gain
+more information and context.</p>
+</div>
+<h3 class="body" id="triaging-feature-requests">Triaging Feature Requests<a class="headerlink" href="#triaging-feature-requests" title="Permanent link">¶</a></h3>
+<p>The <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong> ensure that any new feature request fits into the
+vision for the project.</p>
+<p>The <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong> communicate with the original poster of the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> to
+determine how to best deal with the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>, including:</p>
+<ul>
+<li>assigning to the originator, if they express a willingness to contribute a solution,</li>
+<li>assigning to the originator and someone else (e.g., a <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr>), if the
+originator is willing to contribute to a solution but is unwilling to develop
+and propose it,</li>
+<li>adding a <code>help wanted</code>, if the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> wishes to look for another
+<abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr>, or</li>
+<li>assigning it to himself or another core team member, if the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr>
+expects the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> to be addressed by them in a timely manner.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Complex issues are best assigned to core team members.</p>
+</div>
+<h3 class="body" id="triaging-duplicate-issues">Triaging Duplicate Issues<a class="headerlink" href="#triaging-duplicate-issues" title="Permanent link">¶</a></h3>
+<p>When assigning a <code>duplicate</code> label, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>should</strong> respond  to the
+originator of the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Thank you for taking the time to open this <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>. Another team member is
+working on this feature, which will be added soon. As a result, we are
+going to close this <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>.</p>
+</div>
+<h3 class="body" id="triaging-rejected-issues">Triaging Rejected Issues<a class="headerlink" href="#triaging-rejected-issues" title="Permanent link">¶</a></h3>
+<p>When assigning a <code>wontfix</code> label, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>should</strong> respond  to the
+originator of the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Thank you for being so interested in our project. The feature you have
+proposed would not be a good fit for this project's current scope and
+direction. At this time, we will not be moving forward with this feature.</p>
+</div>
+<h2 class="body" id="reviewing-pull-requests">Reviewing Pull Requests<a class="headerlink" href="#reviewing-pull-requests" title="Permanent link">¶</a></h2>
+<!-- markdownlint-disable-next-line MD024 -->
+<h3 class="body" id="overview_4">Overview<a class="headerlink" href="#overview_4" title="Permanent link">¶</a></h3>
+<p>It is the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr>'s responsibility to ensure that the suggested code or
+documentation update meets the standards of the project and doesn't introduce
+any new issues for the project. You will also need to work with the <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr>
+to help solve issues they encounter.</p>
+<h3 class="body" id="pull-request-pre-assessment">Pull-Request Pre-Assessment<a class="headerlink" href="#pull-request-pre-assessment" title="Permanent link">¶</a></h3>
+<h4 class="body" id="spam-pull-requests">Spam Pull Requests<a class="headerlink" href="#spam-pull-requests" title="Permanent link">¶</a></h4>
+<p>For any <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr> deemed to be spam, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>should</strong> label the
+request as <code>spam</code>, close the <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr>, and not respond to the <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr>.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+</div>
+<ul>
+<li>whitespace changes to the README file or other files</li>
+<li>random changes to files without an accompanying <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> or explanation</li>
+<li>numerous links to unrelated websites or promotes products/services</li>
+<li>plagiarized content from other sources without permission or proper attribution</li>
+</ul>
+<h4 class="body" id="low-quality-pull-requests">Low-Quality Pull Requests<a class="headerlink" href="#low-quality-pull-requests" title="Permanent link">¶</a></h4>
+<p>For a <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr> deemed to be of low quality, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>should</strong> reach
+out to the author, explaining what needs to be added and what changes need to
+be made.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+</div>
+<ul>
+<li>unfinished pull requests that do not address the entire <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr></li>
+<li>code that does not fit within the established <abbr title="A style guide is a set of rules and conventions that define the preferred formatting, writing style, and visual elements used in documentation and other content. This helps maintain consistency and clarity across documents, making them easier to read and understand.">style guide</abbr> for the project</li>
+<li>incomplete <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr> forms that do not provide sufficient information on
+what changes were made</li>
+<li>address multiple issues at once and make it challenging to review</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Most of the time, low-quality pull requests are due to contributors not
+being aware of the rules to follow and need extra explanation and time to
+improve their pull requests.</p>
+</div>
+<h4 class="body" id="stale-pull-requests">Stale Pull Requests<a class="headerlink" href="#stale-pull-requests" title="Permanent link">¶</a></h4>
+<p>If the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> is unable to get a response from a <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr> regarding an
+<abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> after a repeated attempts over several weeks, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>may</strong>
+reassign the associated <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>; if there is an associated pending <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr>,
+the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong> either close the <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr> or take it over (i.e.,
+by using the code in the <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr> as the starting point for additional
+modifications).</p>
+<h3 class="body" id="testing">Testing<a class="headerlink" href="#testing" title="Permanent link">¶</a></h3>
+<!-- markdownlint-disable-next-line MD024 -->
+<h4 class="body" id="overview_5">Overview<a class="headerlink" href="#overview_5" title="Permanent link">¶</a></h4>
+<p>The <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong> review each contribution to ensure that all tests pass,
+the contribution works as expected without introducing errors.</p>
+<h4 class="body" id="automated-testing">Automated Testing<a class="headerlink" href="#automated-testing" title="Permanent link">¶</a></h4>
+<p>The <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>should</strong> maintain automated tests to protext against errors.</p>
+<div class="admonition note">
+<p class="admonition-title">GitHub Help</p>
+<p>GitHub allows maintainers to set up an automated test suite that runs on
+every <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr> and merges into the main <abbr title="A branch is a separate version of the code that's created for development purposes. Branches allow contributors to experiment with changes without affecting the main codebase. When changes are ready to be merged into the main codebase, they're typically submitted as a pull request.">branch</abbr>. Good automated test
+suites can help catch bugs from going into production and breaking the
+application.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p><a href="https://github.com/marketplace/actions/is-website-vulnerable">Is Website Vulnerable</a>
+finds publicly known security vulnerabilities in JavaScript libraries' websites</p>
+</div>
+<h4 class="body" id="failing-automated-tests">Failing Automated Tests<a class="headerlink" href="#failing-automated-tests" title="Permanent link">¶</a></h4>
+<p>If a <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> receives a <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr> that fails automated testing, the
+<abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>should</strong> wait a few days to allow the <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr> to resolve
+the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> independently.</p>
+<p>If the <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr> does not resolve the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> within a few days, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr>
+<strong>shall</strong> contact the <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr> to see if they need help.</p>
+<p>If the failing test is unrelated to the <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr>'s changes, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr>
+<strong>shall</strong> let the <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr> know that the error is safe to ignore and that
+it will be fixed in another <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr>.</p>
+<p>If the <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr> fails to respond after repeated attempts over several weeks
+or months, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>should</strong> close the <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr> and move on.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If multiple contributors fail the same set of tests, the tests may need
+improvement.</p>
+</div>
+<p><img alt="Failed automated tests" src="../_assets/images/failed-automated-tests.png"/></p>
+<h4 class="body" id="code-reviews">Code Reviews<a class="headerlink" href="#code-reviews" title="Permanent link">¶</a></h4>
+<p>Prior to accepting any <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr>, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong> review all
+proposed changes to ensure that they are designed to address the reported
+<abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> as claimed and that they conform to the projects coding and documentation
+guidelines.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Performing this test before manual testing is useful as it will provide
+insights into the types of manual tests that are most appropriate.</p>
+</div>
+<h4 class="body" id="manual-testing">Manual Testing<a class="headerlink" href="#manual-testing" title="Permanent link">¶</a></h4>
+<p>Prior to accepting a significant <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr>, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>should</strong> manually
+test the project using his local machine.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If a <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr> involves a small change to documentation or code, manual
+testing is less important, but the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> is the last line of defense
+before a <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr> is merged in, which can potentially introduce new issues.</p>
+</div>
+<h3 class="body" id="effective-feedback">Effective Feedback<a class="headerlink" href="#effective-feedback" title="Permanent link">¶</a></h3>
+<p>If the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> discovers a problem with the <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr>, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr>
+<strong>shall</strong> respond to the <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr> with a detailed account of the problem.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Sometimes, it helps to include a screenshot or screen recording. If the
+automated tests did not catch the problem, it might be worth creating a
+separate <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> to update the test suite.</p>
+</div>
+<p>The <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong> indicate the importance of each problem identified in
+the contribution with <code>critical</code>, <code>high</code>, <code>medium</code>, or <code>low</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Feedback provides a public log of how an <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> has been addressed and needs
+to be informative, constructive, and helpful for the reviewer, <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr>,
+and others that might read it at a later date.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>High: Please use more descriptive variable names for better readability. For
+example, revise the code to replace variable <code>d</code> with <code>duration</code>.</p>
+</div>
+<h4 class="body" id="missing-tests">Missing Tests<a class="headerlink" href="#missing-tests" title="Permanent link">¶</a></h4>
+<p>Significant contributions of code <strong>should</strong> be accompanied with tests to help
+ensure that everything is working as expected.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If the contribution does not include such tests, reach out to them to
+determine how they tested their contribution and let them know what parts
+need to be tested.</p>
+</div>
+<h2 class="body" id="creating-a-release">Creating a Release<a class="headerlink" href="#creating-a-release" title="Permanent link">¶</a></h2>
+<p>The <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong> create a formal release for each version of the
+document approved for release by the responsible WG or committee.</p>
+<div class="admonition note">
+<p class="admonition-title">GitHub Help</p>
+<p>Within GitHub, this can be achieved through the<strong>Releases</strong> tab.</p>
+</div>
+<p>The <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong> assign a tag to the release that indicates the version
+number per <a href="https://semver.org">Semantic Versioning 2.0.0</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This produces a version number in the format of
+<code>&lt;major&gt;.&lt;minor&gt;.&lt;patch&gt;[-&lt;pre-release&gt;]</code> format, where</p>
+<ul>
+<li>the <code>major</code> number increments (and the other values reset to 0) when
+non-backwards compatible changes are made,</li>
+<li>the <code>minor</code> version increments (and patch resets) when features are added
+in a backwards compatible manner,</li>
+<li>the <code>patch</code> increments when backward compatible fixes are made without any
+new features, and</li>
+<li>an optional <code>pre-release</code> code (preceded by a hyphen) indicates versions
+under development and must have a sequential alphanumeric identifier</li>
+</ul>
+</div>
+<p>The <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong> attach a PDF and zip archive of the website in
+versioned directories in the gh-pages <abbr title="A branch is a separate version of the code that's created for development purposes. Branches allow contributors to experiment with changes without affecting the main codebase. When changes are ready to be merged into the main codebase, they're typically submitted as a pull request.">branch</abbr>.</p>
+<div class="language-text highlight"><pre><span></span><code>gh-pages/  
+├── index.html (latest version)  
+├── v1.0.0/  
+├── v1.0.1/  
+├── v1.1.0/  
+└── v2.0.0/
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">GitHub Help</p>
+<p>This can be automated with <abbr title="GitHub Actions are a way to automate tasks within your software development life cycle. GitHub Actions are event-driven, meaning that you can run a series of commands after a specified event has occurred. Examples of GitHub Actions include running tests, deploying to production, and sending notifications.">GitHub actions</abbr>.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When deploying a new version, ensure the previous version is moved into its
+own directory before overwriting the index.html and other files for the new
+release.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example GitHub Action</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>name: Deploy MkDocs Site and Generate PDF
+</span><span id="__span-0-2"><a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a>on:
+</span><span id="__span-0-3"><a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a>  push:
+</span><span id="__span-0-4"><a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a>    tags:
+</span><span id="__span-0-5"><a href="#__codelineno-0-5" id="__codelineno-0-5" name="__codelineno-0-5"></a>      - 'v*'
+</span><span id="__span-0-6"><a href="#__codelineno-0-6" id="__codelineno-0-6" name="__codelineno-0-6"></a>
+</span><span id="__span-0-7"><a href="#__codelineno-0-7" id="__codelineno-0-7" name="__codelineno-0-7"></a>jobs:
+</span><span id="__span-0-8"><a href="#__codelineno-0-8" id="__codelineno-0-8" name="__codelineno-0-8"></a>  build:
+</span><span id="__span-0-9"><a href="#__codelineno-0-9" id="__codelineno-0-9" name="__codelineno-0-9"></a>    runs-on: ubuntu-latest
+</span><span id="__span-0-10"><a href="#__codelineno-0-10" id="__codelineno-0-10" name="__codelineno-0-10"></a>    steps:
+</span><span id="__span-0-11"><a href="#__codelineno-0-11" id="__codelineno-0-11" name="__codelineno-0-11"></a>      - name: Checkout code
+</span><span id="__span-0-12"><a href="#__codelineno-0-12" id="__codelineno-0-12" name="__codelineno-0-12"></a>        uses: actions/checkout@v3
+</span><span id="__span-0-13"><a href="#__codelineno-0-13" id="__codelineno-0-13" name="__codelineno-0-13"></a>
+</span><span id="__span-0-14"><a href="#__codelineno-0-14" id="__codelineno-0-14" name="__codelineno-0-14"></a>- name: Set up Python
+</span><span id="__span-0-15"><a href="#__codelineno-0-15" id="__codelineno-0-15" name="__codelineno-0-15"></a>        uses: actions/setup-python@v4
+</span><span id="__span-0-16"><a href="#__codelineno-0-16" id="__codelineno-0-16" name="__codelineno-0-16"></a>        with:
+</span><span id="__span-0-17"><a href="#__codelineno-0-17" id="__codelineno-0-17" name="__codelineno-0-17"></a>          python-version: '3.x'
+</span><span id="__span-0-18"><a href="#__codelineno-0-18" id="__codelineno-0-18" name="__codelineno-0-18"></a>
+</span><span id="__span-0-19"><a href="#__codelineno-0-19" id="__codelineno-0-19" name="__codelineno-0-19"></a>- name: Install dependencies
+</span><span id="__span-0-20"><a href="#__codelineno-0-20" id="__codelineno-0-20" name="__codelineno-0-20"></a>        run: |
+</span><span id="__span-0-21"><a href="#__codelineno-0-21" id="__codelineno-0-21" name="__codelineno-0-21"></a>          pip install mkdocs-material
+</span><span id="__span-0-22"><a href="#__codelineno-0-22" id="__codelineno-0-22" name="__codelineno-0-22"></a>          pip install weasyprint
+</span><span id="__span-0-23"><a href="#__codelineno-0-23" id="__codelineno-0-23" name="__codelineno-0-23"></a>
+</span><span id="__span-0-24"><a href="#__codelineno-0-24" id="__codelineno-0-24" name="__codelineno-0-24"></a>- name: Build MkDocs site
+</span><span id="__span-0-25"><a href="#__codelineno-0-25" id="__codelineno-0-25" name="__codelineno-0-25"></a>        run: mkdocs build
+</span><span id="__span-0-26"><a href="#__codelineno-0-26" id="__codelineno-0-26" name="__codelineno-0-26"></a>
+</span><span id="__span-0-27"><a href="#__codelineno-0-27" id="__codelineno-0-27" name="__codelineno-0-27"></a>- name: Generate PDF
+</span><span id="__span-0-28"><a href="#__codelineno-0-28" id="__codelineno-0-28" name="__codelineno-0-28"></a>        run: |
+</span><span id="__span-0-29"><a href="#__codelineno-0-29" id="__codelineno-0-29" name="__codelineno-0-29"></a>          weasyprint site/index.html site/docs.pdf
+</span><span id="__span-0-30"><a href="#__codelineno-0-30" id="__codelineno-0-30" name="__codelineno-0-30"></a>        env:
+</span><span id="__span-0-31"><a href="#__codelineno-0-31" id="__codelineno-0-31" name="__codelineno-0-31"></a>          WEASYPRINT_BASEURL: 'https://yourusername.github.io/repository-name/'
+</span><span id="__span-0-32"><a href="#__codelineno-0-32" id="__codelineno-0-32" name="__codelineno-0-32"></a>
+</span><span id="__span-0-33"><a href="#__codelineno-0-33" id="__codelineno-0-33" name="__codelineno-0-33"></a>- name: Deploy to GitHub Pages
+</span><span id="__span-0-34"><a href="#__codelineno-0-34" id="__codelineno-0-34" name="__codelineno-0-34"></a>        uses: peaceiris/actions-gh-pages@v4
+</span><span id="__span-0-35"><a href="#__codelineno-0-35" id="__codelineno-0-35" name="__codelineno-0-35"></a>        with:
+</span><span id="__span-0-36"><a href="#__codelineno-0-36" id="__codelineno-0-36" name="__codelineno-0-36"></a>          github_token: ${{ secrets.GITHUB_TOKEN }}
+</span><span id="__span-0-37"><a href="#__codelineno-0-37" id="__codelineno-0-37" name="__codelineno-0-37"></a>          publish_dir: ./site
+</span><span id="__span-0-38"><a href="#__codelineno-0-38" id="__codelineno-0-38" name="__codelineno-0-38"></a>
+</span><span id="__span-0-39"><a href="#__codelineno-0-39" id="__codelineno-0-39" name="__codelineno-0-39"></a>- name: Upload PDF to release
+</span><span id="__span-0-40"><a href="#__codelineno-0-40" id="__codelineno-0-40" name="__codelineno-0-40"></a>        if: github.ref_type == 'tag'
+</span><span id="__span-0-41"><a href="#__codelineno-0-41" id="__codelineno-0-41" name="__codelineno-0-41"></a>        uses: actions/upload-artifact@v3
+</span><span id="__span-0-42"><a href="#__codelineno-0-42" id="__codelineno-0-42" name="__codelineno-0-42"></a>        with:
+</span><span id="__span-0-43"><a href="#__codelineno-0-43" id="__codelineno-0-43" name="__codelineno-0-43"></a>          name: docs-${{ github.ref_name }}.pdf
+</span><span id="__span-0-44"><a href="#__codelineno-0-44" id="__codelineno-0-44" name="__codelineno-0-44"></a>          path: site/docs.pdf
+</span></code></pre></div>
+</div>
+<h2 class="body" id="building-a-community">Building a Community<a class="headerlink" href="#building-a-community" title="Permanent link">¶</a></h2>
+<!-- markdownlint-disable-next-line MD024 -->
+<h3 class="body" id="overview_6">Overview<a class="headerlink" href="#overview_6" title="Permanent link">¶</a></h3>
+<p>A vital component of any open source project is its community. Building a strong
+community can help accelerate the growth of your open source project. As new
+contributors discover and start to contribute to your project, you will want to
+create spaces for communication and collaboration.</p>
+<p>If your project is on GitHub, you can use <a href="https://docs.github.com/en/discussions">GitHub Discussions</a>
+as a way for contributors to post questions and facilitate conversations. WG
+meetings should be advertised on the discussion board to encourage participation.</p>
+<h3 class="body" id="promptly-respond-and-address-concerns">Promptly Respond and Address Concerns<a class="headerlink" href="#promptly-respond-and-address-concerns" title="Permanent link">¶</a></h3>
+<p>Maintainers <strong>should</strong> establish a schedule to review incoming issues and pull
+requests and post this schedule within the discussion forum.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It is important to set expectations as to how fast maintenance issues are
+likely to be addressed. This timline might vary considerably across ITS
+open-source projects and during teh lifetime of any one project (e.g.,
+there are often periods of moew active development and less active
+development).</p>
+</div>
+<p>The <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>should</strong> set up <a href="https://docs.github.com/en/actions">GitHub Actions</a>
+to automate responses that welcomes each new <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr> and provides an estimated
+time by which the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> triage or PR review can be expected</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can learn how to set one up in<a href="https://dev.to/opensauced/github-actions-a-maintainers-best-friend-488n">this article</a>.</p>
+</div>
+<p><img alt="Create GitHub Action" src="../_assets/images/gh-actions.png"/></p>
+<h2 class="body" id="advanced-features">Advanced Features<a class="headerlink" href="#advanced-features" title="Permanent link">¶</a></h2>
+<!-- markdownlint-disable-next-line MD024 -->
+<h3 class="body" id="overview_7">Overview<a class="headerlink" href="#overview_7" title="Permanent link">¶</a></h3>
+<p>Leveraging GitHub Actions to bring Continuous Integration / Continuous Delivery
+or Deployment (CI/CD) into your workflow directly in your <abbr title="A repository is a central location where code is stored and managed. In open source, repositories are often hosted on platforms like GitHub, GitLab, or Bitbucket. Each repository can contain one or more projects, and contributors can submit changes to the code by making pull requests.">repository</abbr> will let
+you run code, test, build, and deliver or deploy software with simple and secure
+workflows. Automating these tasks will speed up your deployment process.</p>
+<p>Using Git, GitHub, and GitHub Actions to build a CI/CD pipeline should give you
+confidence in your code.</p>
+<p>Below are some helpful resources to help you build a CI/CD pipeline with GitHub Actions:</p>
+<ul>
+<li><a href="https://github.com/solutions/ci-cd/">GitHub Docs: The complete CI/CD solution</a></li>
+<li><a href="https://github.blog/2022-02-02-build-ci-cd-pipeline-github-actions-four-steps/">How to build a CI/CD pipeline with GitHub Actions in four simple steps</a></li>
+</ul>
+<p>There are many types of actions that you can set up for your project, depending
+on what you need. Below are some GitHub Actions that you usually find across
+repositories:</p>
+<h3 class="body" id="linter">Linter<a class="headerlink" href="#linter" title="Permanent link">¶</a></h3>
+<p>Most open source repositories have linters that run on each <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr>. Linter
+is a tool for detecting potential errors and maintaining a consistent code style
+in a project. <a href="https://github.com/marketplace/actions/super-linter">Super-Linter</a>
+is one of the most used actions. This action can help you maintain code quality
+and achieve a more readable and consistent style.</p>
+<h3 class="body" id="code-scanning-tools">Code Scanning Tools<a class="headerlink" href="#code-scanning-tools" title="Permanent link">¶</a></h3>
+<p>Code scanning is a tool for detecting security vulnerabilities, possible bugs,
+and errors in code. You can use GitHub's <a href="https://docs.github.com/en/code-security/code-scanning">code scanning</a>
+feature and configure tools like
+<a href="https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql">CodeQL</a>,
+which GitHub maintains, or third-party scanning tools such as
+<a href="https://github.com/marketplace/actions/official-sonarqube-scan">SonarQube</a>.</p>
+<h3 class="body" id="creating-and-customizing-actions">Creating and Customizing Actions<a class="headerlink" href="#creating-and-customizing-actions" title="Permanent link">¶</a></h3>
+<p>Actions of note:</p>
+<ul>
+<li><a href="https://github.com/marketplace?type=actions">GitHub Marketplace</a></li>
+<li><a href="https://github.com/marketplace/actions/contributor-takes-action">Take Action</a>:
+allows contributors to assign themselves to an <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> by typing the <code>.take</code>
+command in the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>'s comment.</li>
+<li><a href="https://github.com/open-sauced/app/blob/beta/.github/workflows/triage.yml">Triage Action</a>:
+blocks the Take Action whenever a <code>needs triage</code> or <code>core team work</code> label exists.</li>
+</ul>
+<p>You can read more about GitHub Actions and how to create one in
+<a href="https://github.com/features/actions">the official documentation</a>.</p>
+<h3 class="body" id="projects">Projects<a class="headerlink" href="#projects" title="Permanent link">¶</a></h3>
+<p>Keeping track of your issues is getting more challenging as your project
+progresses. A great tool that can help you organize and track your issues is
+<a href="https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects">Projects</a>
+on GitHub. With projects, you can efficiently manage your project's features,
+roadmaps, or releases as they're built from and integrated with issues and pull
+requests that you add.</p>
+<p>You can choose a template for your project. One of the templates is the "Kanban"
+template. Here, you can create notes and place the existing issues and pull
+requests in the "Backlog", "Ready", "In progress", "In review", and "Done"
+columns. This will make it easy for you and your team to track the progress of
+your project.</p>
+<p>To create a new project:</p>
+<ol>
+<li>Navigate to your GitHub profile and click the "Projects" tab.</li>
+<li>Click the green "New project" button.</li>
+<li>Choose a template.</li>
+<li>Name your project and click the "Create project" button at the bottom.</li>
+</ol>
+<p>Please read the <a href="https://docs.github.com/en/issues/planning-and-tracking-with-projects/managing-items-in-your-project/adding-items-to-your-project">GitHub documentation</a>
+to learn more about adding items to your project.</p>
+<p><img alt="GitHub Project Boards GIF" src="../_assets/gifs/create-github-project.gif"/></p>
+</div>
+<aside class="md-source-file">
+<span class="md-source-file__fact">
+<span class="md-icon" title="Last update">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
+</span>
+<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 19, 2025 16:10:00">May 19, 2025</span>
+</span>
+</aside>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a href="https://github.com/ite-org/NTCIP-8008" property="dct:title" rel="cc:attributionURL">ITS Open-Source Process</a> by <span property="cc:attributionName">NTCIP</span> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" rel="license noopener noreferrer" style="display:inline-block;" target="_blank">CC BY 4.0<img alt="" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"/><img alt="" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"/></a></p>
+</div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "content.status", "content.tooltips", "icons", "navigation.path", "navigation.top"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"alias": true, "default": "latest", "provider": "mike"}}</script>
+<script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
+<script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
+<script src="../javascripts/tablesort.js"></script>
+</body>
+</html>
