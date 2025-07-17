@@ -1,7 +1,7 @@
 <!-- markdownlint-enable require-heading-body -->
-<div class="section-1" markdown="1">
+<div markdown="1">
 <style>
-  .section-1 { counter-set: section 1; }
+    :root { --section-number: 1; --section-style: decimal; }
 </style>
 
 # General {.body}

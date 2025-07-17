@@ -17,7 +17,7 @@ nav:
   - A Code of Conduct: code-of-conduct.md
   - B Documentation Conventions: documentation-conventions.md
   - C Coding Conventions: coding-conventions.md
-  - D Material for MkDocs Eamples: examples.md
+  - D Material for MkDocs Examples: examples.md
 site_url: https://ite-org.github.io/NTCIP-8008/
 copyright: <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/ite-org/NTCIP-8008">ITS Open-Source Process</a> by <span property="cc:attributionName">NTCIP</span> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""></a></p>
 theme:
@@ -34,6 +34,15 @@ theme:
     repo: fontawesome/brands/github
     admonition:
       question: fontawesome/solid/comments
+  palette: 
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
 extra_css:
   - stylesheets/extra.css
   - stylesheets/pdf.css
@@ -49,10 +58,15 @@ plugins:
       copyright: "CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)"
       cover_logo: images/NTCIP.jpg
       cover_subtitle: "https://ite-org.github.io/NTCIP-8008/latest/"
-#      enabled_if_env: "EXPORT_PDF"
+      enabled_if_env: "EXPORT_PDF"
       output_path: pdf/NTCIP-8008.pdf
       download_link: header
       ordered_chapter_level: 0
+  - mermaid2:
+      arguments:
+        theme: |
+            ^(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light'
+        securityLevel: loose
 markdown_extensions:
   - abbr
   - admonition

@@ -1,7 +1,7 @@
 <!-- markdownlint-enable require-heading-body -->
-<div class="section-6" markdown="1">
+<div markdown="1">
 <style>
-  .section-6 { counter-set: section 6; }
+    :root { --section-number: 6; --section-style: decimal; }
 </style>
 
 # WG Responsibilities {.body}
@@ -24,6 +24,17 @@ The stages within the open-source process include:
 - issue prioritization
 - pull-request approval
 - release approval
+
+!!! warning "Committee Requirement"
+    When starting a project, the committee shall:
+
+    - Identify a responsible working group
+    - Identify one or more maintainers
+
+    Update style
+
+!!! warning "WG Requirement"
+    The WG shall define the time within which the maintainer is expected to triage and respond to submitted comments.
 
 ## Project Approval {.body}
 
@@ -52,7 +63,7 @@ significant issue and how various issues should be handled.
 !!! note
     Many issues can be prioritized by the maintainer without involving the WG;
     however, when major issues arise that affect the direction of the project,
-    it is best to obtain direction from the WG to ensure resoures are managed
+    it is best to obtain direction from the WG to ensure resources are managed
     properly.
 
 ## Pull-Request Approval {.body}
@@ -78,6 +89,9 @@ a project prior to it being tagged as a release.
 
 The WG responsible for the open-source project **shall** establish its policies
 on what constitutes a release approval.
+
+!!! note
+    Releases can be made from any branch, not just the main branch.
 
 !!! example
     A release approval can be as simple as WG consensus or can require a formal

@@ -1,7 +1,7 @@
 <!-- markdownlint-enable require-heading-annex -->
-<div class="annex-1" markdown="1">
+<div markdown="1">
 <style>
-  .annex-1 { counter-set: section 1; }
+    :root { --section-number: 1; --section-style: upper-alpha; }
 </style>
 
 # Contributor Covenant Code of Conduct {.annex}

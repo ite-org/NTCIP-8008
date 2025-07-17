@@ -1,7 +1,7 @@
 <!-- markdownlint-enable require-heading-annex -->
-<div class="annex-2" markdown="1">
+<div markdown="1">
 <style>
-  .annex-2 { counter-set: section 2; }
+    :root { --section-number: 2; --section-style: upper-alpha; }
 </style>
 
 # Documentation Conventions {.annex}
@@ -20,7 +20,7 @@ In addition to the development tools needed to manage and submit any
 contribution within the Git environment (e.g., Git, GitHub), developing project
 documentation requires the following tools:
 
-- **A text editor,** which is used to create and edit markdwon and yaml files,
+- **A text editor,** which is used to create and edit markdown and yaml files,
 - **Python,** which is required to run MkDocs,
 - **MkDocs,** which is an open-source tool for translating a set of markdown
   files into a static website, and
@@ -43,7 +43,7 @@ edits. Generating the documentation website locally from a known baseline allows
 the contributor to verify that the development environment is working correctly
 prior to introducing edits to the files. Contributors are required to generate
 the documentation locally to verify that their proposed changes do not introduce
-any errors to the project. The MkDocs development environemnt allows users to
+any errors to the project. The MkDocs development environment allows users to
 see their changes in real time so that any errors can be addressed quickly.
 
 ### Text Editor {.annex}
@@ -140,7 +140,7 @@ file. Major portions are defined as:
 
 - the title page, which shall be `index.md`;
 - each top-level section of the front matter (e.g., Foreword, Introduction);
-- each section in the body of the docuemnt; and
+- each section in the body of the document; and
 - each annex.
 
 The document structure **shall** be reflected in the project's `mkdocs.yml` file
@@ -229,14 +229,12 @@ Each file representing a section of the main body of the document **shall**:
 - End each heading with `{.body}`
 
 !!! example "Example of Start of a Section File"
-    ```markdown
-    <!-- markdownlint-disable MD033 -->
-    <!-- markdownlint-disable MD041 -->
+    ``` html
+    <!-- markdownlint-enable require-heading-annex -->
+    <div markdown="1">
     <style>
-      body { counter-set: section 3; }
+        :root { --section-number: 2; --section-style: decimal; }
     </style>
-    <!-- markdownlint-enable MD033 -->
-    # Documentation Conventions {.body}
     ```
 
 !!! note
@@ -252,8 +250,8 @@ Each file representing a section of the main body of the document **shall**:
 
 Each file representing an annex of the document **shall**:
 
-- Start with code that sets the section counter for the annex to the numberical
-  order of the annex (the script will transofmr this into an alphabetic letter)
+- Start with code that sets the section counter for the annex to the numerical
+  order of the annex (the script will transform this into an alphabetic letter)
 - Include a single level 1 heading that has the same title as defined in the
   `nav` section of the `mkdocs.yml` file and occurs immediately after the code
   defining the section number
@@ -261,12 +259,12 @@ Each file representing an annex of the document **shall**:
 
 !!! example "Example of Start of an Annex File"
     ```markdown
-    <!-- markdownlint-disable MD033 -->
-    <!-- markdownlint-disable MD041 -->
+    <!-- markdownlint-enable require-heading-annex -->
+    <div markdown="1">
     <style>
-      body { counter-set: section 1; }
+        :root { --section-number: 2; --section-style: upper-alpha; }
     </style>
-    <!-- markdownlint-enable MD033 -->
+
     # Example Annex {.annex}
     ```
 
@@ -291,9 +289,6 @@ after the hash symbols and a space.
 
     #### Heading 4
     ```
-    ### Heading 3
-
-    #### Heading 4
 
 #### Text Formatting {.annex}
 
@@ -319,8 +314,7 @@ after the hash symbols and a space.
 
 - Create ordered lists using numbers followed by a period (`1.`, `2.`, etc.).
 - Create unordered lists using hyphens (`-`).
-- The line before a list must be blank and a list cannot be immediately
-  precedded by a different list
+- The line before a list must be blank and a list cannot be immediately preceded by a different list
 - The style for the list is defined by the first list item
 
 !!! example
@@ -372,9 +366,9 @@ attribute field can be added to the end to specify the size.
     ```
     ![NTCIP](_assets/images/NTCIP.jpg){ width=200px }
 
-#### Blockquotes {.annex}
+#### Block quotations {.annex}
 
-Create blockquotes using the greater-than symbol (`>`) or through Materials for
+Create a blockquote using the greater-than symbol (`>`) or through Materials for
 MkDocs' admonition quote (`!!! quote`).
 
 !!! example
@@ -395,17 +389,22 @@ Create code blocks using triple backticks (` ``` `) for fenced code blocks and
 specify a language next to the backticks before the fenced code block to
 highlight the syntax.
 
-!!! example
-    ````
-    ```
+=== "Example"
+    ``` bash
     bash git pull
     ```
-    ````
+
+=== "Example code"
+    ``` markdown
+    ``` bash
+    bash git pull
+    ```
+    ```
 
 #### Admonitions {.annex}
 
 Create callout out blocks for different purposes using the Materials for MkDocs
-[admonistions](https://squidfunk.github.io/mkdocs-material/reference/admonitions/?h=adm#supported-types)
+[admonitions](https://squidfunk.github.io/mkdocs-material/reference/admonitions/?h=adm#supported-types)
 feature by including three explanation points and the admonition type with the
 contained text indented by four spaces (`!!! note`)
 

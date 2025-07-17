@@ -1,13 +1,22 @@
 <!-- markdownlint-enable require-heading-body -->
-<div class="section-2" markdown="1">
+<div markdown="1">
 <style>
-  .section-2 { counter-set: section 2; }
+    :root { --section-number: 2; --section-style: decimal; }
 </style>
 
 # Overview {.body}
 
-Managing an open-source project involves four major activities as described in
-the following clauses:
+## General {.body}
+
+It might be tempting to think that managing an open-source standard can be achieved by using any general-purpose word processor that supports a collaborative development environment. However, one will quickly discover that these tools lack key features that are required for industry standards. For example, the two biggest issues are:
+
+- Every edit made to a draft standard needs to be reviewed before being incorporated into a final product. General-purpose, collaborative word processors typically allow anyone with edit rights to edit the document without any traceability. If this was used for a draft standard, anyone with editing rights could make a minor change in the text immediately before the document was approved. The minor textual change could easily be missed by most reviewers while impact of a minor textual change could be significant (e.g., changing "shall" to "shall not"). Thus, rather than allowing peers to edit a common document, the process proposed in this document requires contributors to offer alternative text in a format where their proposal can be viewed and compared against the existing draft before it is incorporated into the final text.
+
+- Standards are used for deployments that can remain in operation for decades. It is important that industry professionals can quickly access any prior released version of the standard so that they can understand devices that were previously deployed. General-purpose word processors generally only deal with one version of a document while the GitHub environment recommended by this document allows a complete version control history that allows users to display any archived version of the document.
+
+To overcome these challenges, this document recommends using a `git` environment (in the case of NTCIP, one hosted at GitHub) that leverages markdown and Material for MkDocs as the primary documentation environment.
+
+Managing a project within this open-source environment involves four major activities as described in the following clauses:
 
 1. Establishing the project
 2. Processing comments
@@ -16,7 +25,7 @@ the following clauses:
 
 ## Establishing the Project {.body}
 
-Figure 1 provides an overview of the process to establish a new open-source project.
+<next-fig /> provides an overview of the process to establish a new open-source project.
 
 ```mermaid
 %%{init: { 'sequence': { 'mirrorActors': false } }}%%
@@ -38,6 +47,8 @@ sequenceDiagram
   Maintainer ->> Repo: Create appropriate branches for work
 ```
 
+<figure><figcaption>Establish a new open-source project</figcaption></figure>
+
 When someone identifies a need for a new shared resource (e.g., industry
 standard, reusable code, etc.) within ITS, they can develop a proposal and
 submit it to an appropriate committee. The
@@ -46,13 +57,12 @@ a complete prototype.
 
 If the proposal is accepted by the committee, the committee will assign a working group and one or more
 maintainers who will become responsible for leading the project. This will often
-include the individual proposing the project. The maintainer will establish the
+include the individual proposing the project. A maintainer will establish the
 open-source project repository on the standards development organization's
 open-source website (e.g., GitHub account) and upload the initial project files.
 
-!!! question "Needs Review"
-    !!! note
-        The maintainer is a key role in the project. If the maintainer is not available for any reason, it can delay the triage of identified issues. It is the responsibility of the committee to ensure that the maintainer either has sufficient resources or has sufficient backup to provide a high degree of confidence that there is not an articicial bottleneck when contributors wish to address problems.
+!!! note
+    The maintainer is a key role in the project. If the maintainer is not available for any reason, it can delay the triage of identified issues. It is the responsibility of the committee to ensure that the maintainer either has sufficient resources or has sufficient backup to provide a high degree of confidence that there is not an artificial bottleneck when contributors wish to address problems.
 
 Once the initial upload is provided, the maintainer will work with the working
 group to refine the vision for the project and establish the set of baseline
@@ -63,21 +73,13 @@ submit their issues directly so that the originator can be properly captured and
 to encourage WG members to become familiar with the process; however, the
 Maintainer can submit comments on the behalf of others, if needed.
 
-The Maintainer is also responsible for creating any necessary branches for developing draft materials. The "main" branch should always be restricted to formal releases. Working drafts and pre-releases should be contained within branches so that industry users do not accidentally look at a draft thinking that it is approved.
+The Maintainers are also responsible for properly managing the GitHub registry structure according to project policies. For example, this might include establishing a `draft` branch and ensuring all contributions are merged into this branch as appropriate. It might also define rules on when to tag committed versions as a release or pre-release and ensuring that GitHub actions properly run to generate updates to the website with all appropriate information.
 
-!!! question "Needs Review"
-    We need to review this process with a GitHub expert to determine the best way for managaing the website (and PDF) rendered versions of the current release alongside drafts. In other words, deployments need ready access to the current version (and all previous versions) while WG members need access to the current draft. By default GitHub only allows one rendered version but we could:
-
-    - Use separate repositories (e.g., NTCIP-8008 and NTCIP-8008-future)
-    - Use subdirectories (e.g., docs for current and docs/future for draft)
-    - Use a GitHub action to publish different branches to different subdirectories of the gh-pages branch
-    - Use a GitHub action to publish different branches to different repositories, one for each published/draft branch
-
-    All projects should likely use the same mechanism and the selection should be made in consultation with GitHub experts.
+The goal should be to have both the generated website and the GitHub page to default to the latest approved version (if an approved version exists) and should allow viewing any prior formal release or the most recent working draft (i.e., pre-release). Other versions can be provided as well at the WG's direction. The generated website should include a banner at the top of each page indicating the status of the currently displayed version, unless it is the latest approved version.
 
 ## Process comments {.body}
 
-Figure 2 provides an overview of how comments are processed for an open-source
+<next-fig /> provides an overview of how comments are processed for an open-source
 project.
 
 ```mermaid
@@ -96,28 +98,29 @@ sequenceDiagram
   Maintainer ->> Repo: Perform triage
 ```
 
+<figure><figcaption>Process comments for an open-source project</figcaption></figure>
+
 Users of open-source projects often have questions, encounter bugs, request
 features, or provide feedback on usability. Submitting comments is the primary
 way for the community to help guide the development of the project. Comments can be submitted at any time.
 
 When comments are submitted, maintainers (and other followers) are notified. If
 the comment is submitted as an issue (as opposed to a discussion item), the
-maintainer triages the issue by determing its relevance, classification (e.g.,
+maintainer triages the issue by determining its relevance, classification (e.g.,
 bug, documentation issue), and priority. If needed, the maintainer can discuss
-the issue with the commentor or sponsoring WG to ensure consensus from the
+the issue with the commenter or sponsoring WG to ensure consensus from the
 broader community.
 
-!!! question "Needs Review"
-    Each project should identify its goals for triaging submitted issues. By default, projects should have a goal of triaging all comments within one month of their submittal, but the exact timeline might vary based on available resources, the criticality of the project, and other factors. If a submitted issue is not triaged within this timeline, the submitter should contact the parent standards development organization for guidance.
+Each project should identify its goals for triaging submitted issues. By default, projects should have a goal of triaging all comments within one month of their submittal, but the exact timeline might vary based on available resources, the criticality of the project, and other factors. If a submitted issue is not triaged within this timeline, the submitter should contact the parent standards development organization for guidance.
 
 As a result of the review, the issue can be accepted, merged
 with another issue, split into multiple issues, or rejected (e.g., if it does
 not fit with the project's goals). Once the triage is complete, the maintainer
 adds tags as appropriate to the issue so that it can properly be managed.
 
-## Procss Contributions {.body}
+## Process Contributions {.body}
 
-Figure 3 provides an overview of processing contributions to an open-source project.
+<next-fig/> provides an overview of processing contributions to an open-source project.
 
 ```mermaid
 %%{init: { 'sequence': { 'mirrorActors': false } }}%%
@@ -144,12 +147,14 @@ sequenceDiagram
   end
 ```
 
+<figure><figcaption>Process contributions to an open-source project</figcaption></figure>
+
 Open-source projects encourage contributions from the community, allowing others
 to solve issues or implement features. Contributors gain experience and
 recognition, while the project benefits from a broader range of solutions.
 
 Interested contributors browse the list of open issues, claim one they are
-interested in, and start working on a solution. When they have develped and
+interested in, and start working on a solution. When they have developed and
 tested their proposed solution, they submit a request for the maintainer to
 "pull" a copy of their changes from their site. This is known as a pull request
 (PR).
@@ -170,7 +175,7 @@ request and the changes will be merged into the open-source project.
 
 ## Approve Releases {.body}
 
-Figure 4 provides an overview of the process to approve a new release of an
+<next-fig/> provides an overview of the process to approve a new release of an
 open-source project.
 
 ```mermaid
@@ -190,6 +195,8 @@ sequenceDiagram
     Maintainer ->> Repo: Address identified issues
   end
 ```
+
+<figure><figcaption>Approve releases for an open-source project</figcaption></figure>
 
 Releasing a project allows users to access a stable, tested version with new
 features, bug fixes, or improvements. It also provides a versioned snapshot that

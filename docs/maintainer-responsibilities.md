@@ -1,10 +1,15 @@
 <!-- markdownlint-enable require-heading-body -->
-<div class="section-5" markdown="1">
+<div markdown="1">
 <style>
-  .section-5 { counter-set: section 5; }
+    :root { --section-number: 5; --section-style: decimal; }
 </style>
 
 # Maintainer Responsibilities {.body}
+
+When starting a project, the maintainer **shall**:
+
+- Establish the open-source project on GitHub under the designated organizational account
+- Upload the initial project files
 
 ## Overview {.body}
 
@@ -68,7 +73,7 @@ repository when starting the project and maintained throughout the project:
 - SECURITY.md
 - .github/CODEOWNERS
 - appropriate issue templates in .github/ISSUE_TEMPLATE/
-- appropriate PR temapltes in .github/PULL_REQUEST_TEMPLATE/
+- appropriate PR templates in .github/PULL_REQUEST_TEMPLATE/
 - appropriate saved replies
 
 Additionally, if the site includes documentation, the maintainer **shall**
@@ -81,7 +86,7 @@ project and maintained throughout the project:
 - docs/index.md
 - docs/stylesheets/extra.css
 - overrides/main.html (adds a status badge to the page)
-- overrides/partials/nav.html (changes the naviation heading to be "Contents")
+- overrides/partials/nav.html (changes the navigation heading to be "Contents")
 - overrides/partials/toc.html (changes TOC heading to be the document name)
 
 Finally, the site **shall** include installation guidance, which **may** be
@@ -212,7 +217,7 @@ be [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
 !!! note
     The CC BY license is designed for documentation and other creative works where
-    uers are allowed to use, distribute, modify, and contribute but any derivative
+    users are allowed to use, distribute, modify, and contribute but any derivative
     works are required to give attribution to the source of the material and cannot
     "implicitly or explicitly assert or imply any connection with, sponsorship, or
     endorsement by the licensor."
@@ -222,7 +227,7 @@ be the [Gnu Lesser General Public License Version 3](https://www.gnu.org/license
 
 !!! note
     The LGPL v3 license is designed for compilable software that runs on a machine.
-    Like the CC BY license, it allows uers to use, distribute, modify, and contribute
+    Like the CC BY license, it allows users to use, distribute, modify, and contribute
     material as long as they give attribution to the original source and does not
     provide any rights to the names, trademarks, or logos of the original source.
 
@@ -283,11 +288,13 @@ The maintainer **shall** define appropriate pull request templates.
 !!! example
     [.github/PULL_REQUEST_TEMPLATE/PULL_REQUEST_TEMPLATE.md](https://github.com/ite-org/NTCIP-8008/tree/main/.github/PULL_REQUEST_TEMPLATE/PULL_REQUEST_TEMPLATE.md)
 
+    ![PR template example](_assets/images/pr-template.png)
+
+    <figure><figcaption>PR Template Example</figcaption></figure>
+
 !!! tip
     You can learn more about [creating a pull request template](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository)
     on the official GitHub documentation.
-
-![PR template example](_assets/images/pr-template.png)
 
 ### Saved Replies {.body}
 
@@ -307,6 +314,8 @@ Read the GitHub documentation for complete instructions about how to
 [create saved replies](https://docs.github.com/en/get-started/writing-on-github/working-with-saved-replies/creating-a-saved-reply).
 
 ![Saved replies gif](_assets/gifs/saved-replies.gif)
+
+<figure><figcaption>Saved replies</figcaption></figure>
 
 ### Gitignore File {.body}
 
@@ -365,7 +374,7 @@ define a `docs/index.md` file that provides a cover page for the document.
 
 If the project includes documentation using MkDocs, the maintainer **shall**
 define a `docs/stylesheets/extra.css` file that defines the heading styles to
-be used for the body and the annexes (i.e., adding setion numbers in front of
+be used for the body and the annexes (i.e., adding section numbers in front of
 headings).
 
 The maintainer **shall** ensure that this badge only changes per the approval
@@ -576,7 +585,7 @@ address the issue)
 
 ### Triaging Bugs {.body}
 
-The maintainer **should** verify the existance of any reported bug.
+The maintainer **should** verify the existence of any reported bug.
 
 !!! note
     If the maintainer expects to assign the issue to himself, the verification
@@ -641,11 +650,10 @@ For any pull request deemed to be spam, the maintainer **should** label the
 request as `spam`, close the pull request, and not respond to the contributor.
 
 !!! example
-
-- whitespace changes to the README file or other files
-- random changes to files without an accompanying issue or explanation
-- numerous links to unrelated websites or promotes products/services
-- plagiarized content from other sources without permission or proper attribution
+    - whitespace changes to the README file or other files
+    - random changes to files without an accompanying issue or explanation
+    - numerous links to unrelated websites or promotes products/services
+    - plagiarized content from other sources without permission or proper attribution
 
 #### Low-Quality Pull Requests {.body}
 
@@ -654,12 +662,10 @@ out to the author, explaining what needs to be added and what changes need to
 be made.
 
 !!! example
-
-- unfinished pull requests that do not address the entire issue
-- code that does not fit within the established style guide for the project
-- incomplete pull request forms that do not provide sufficient information on
-what changes were made
-- address multiple issues at once and make it challenging to review
+    - unfinished pull requests that do not address the entire issue
+    - code that does not fit within the established style guide for the project
+    - incomplete pull request forms that do not provide sufficient information on what changes were made
+    - address multiple issues at once and make it challenging to review
 
 !!! note
 
@@ -685,7 +691,7 @@ the contribution works as expected without introducing errors.
 
 #### Automated Testing {.body}
 
-The maintainer **should** maintain automated tests to protext against errors.
+The maintainer **should** maintain automated tests to protect against errors.
 
 !!! note "GitHub Help"
     GitHub allows maintainers to set up an automated test suite that runs on
@@ -718,6 +724,8 @@ or months, the maintainer **should** close the pull request and move on.
     improvement.
 
 ![Failed automated tests](_assets/images/failed-automated-tests.png)
+
+<figure><figcaption>Failed automated tests</figcaption></figure>
 
 #### Code Reviews {.body}
 
@@ -774,12 +782,17 @@ ensure that everything is working as expected.
 
 ## Creating a Release {.body}
 
+The maintainer **shall** create a pre-release for each version of the
+document to be reviewed by the responsible WG or committee.
+
+New pre-releases **should** be provided when major changes are made and at least one week prior to WG meetings, unless the WG has established a different notification period.
+
 The maintainer **shall** create a formal release for each version of the
 document approved for release by the responsible WG or committee.
 
 !!! note "GitHub Help"
 
-    Within GitHub, this can be achieved through the**Releases** tab.
+    Within GitHub, this can be achieved through the **Releases** tab.
 
 The maintainer **shall** assign a tag to the release that indicates the version
 number per [Semantic Versioning 2.0.0](https://semver.org).
@@ -883,9 +896,9 @@ requests and post this schedule within the discussion forum.
 
 !!! note
     It is important to set expectations as to how fast maintenance issues are
-    likely to be addressed. This timline might vary considerably across ITS
+    likely to be addressed. This timeline might vary considerably across ITS
     open-source projects and during teh lifetime of any one project (e.g.,
-    there are often periods of moew active development and less active
+    there are often periods of more active development and less active
     development).
 
 The maintainer **should** set up [GitHub Actions](https://docs.github.com/en/actions)
@@ -897,6 +910,8 @@ time by which the issue triage or PR review can be expected
     You can learn how to set one up in[this article](https://dev.to/opensauced/github-actions-a-maintainers-best-friend-488n).
 
 ![Create GitHub Action](_assets/images/gh-actions.png)
+
+<figure><figcaption>Create GitHub Action</figcaption></figure>
 
 ## Advanced Features {.body}
 <!-- markdownlint-disable-next-line MD024 -->
@@ -976,5 +991,7 @@ Please read the [GitHub documentation](https://docs.github.com/en/issues/plannin
 to learn more about adding items to your project.
 
 ![GitHub Project Boards GIF](_assets/gifs/create-github-project.gif)
+
+<figure><figcaption>GitHub Project Boards</figcaption></figure>
 
 </div>

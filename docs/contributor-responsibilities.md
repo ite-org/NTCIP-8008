@@ -1,7 +1,8 @@
 <!-- markdownlint-enable require-heading-body -->
 <div class="section-4" markdown="1">
+<div markdown="1">
 <style>
-  .section-4 { counter-set: section 4; }
+    :root { --section-number: 4; --section-style: decimal; }
 </style>
 
 # Contributor Responsibilities {.body}
@@ -23,17 +24,75 @@ root directory:
 - **CONTRIBUTING.md**: Identifies project-specific rules for contributing.  
 - **LICENSE.md**: Identifies the license agreement for project files
 
-!!! question "Needs Review"
-    We need to make sure that our standard license addresses all concerns. To date, it sounds as if CC-BY is a reasonable approach for documentation and BSD 3 clause is acceptable for code. MIBs probably need a custom license that falls in between these two and restricts the types of changes and use.
+!!! question "For Discussion"
+
+    Teams and GitHub can be integrated to send notices of new releases; however, to set this up we need some administrative actions to take place; it is also unclear if the messages can be sent to an email or if they would only be sent to the channel as a post (i.e., emails require that the channel has a working email address, which I cannot access)
 
 For projects following the ITS Open-Source Process, the last two files will
 typically only identify exceptions or extensions to the rules defined by this
 document.
 
-The overall process for contributing to an ITS open-source project is shown in
-Figure 4-1 and described in the remainder of this section.
+A simplified process for contributing to an ITS open-source project is shown in
+<next-fig/>.
 
-![ITS Open-Source Process Overview](_assets/images/process-overview.png)
+```mermaid
+%%{init: { 'sequence': { 'mirrorActors': false } }}%%
+sequenceDiagram
+  participant GHS as Source GitHub
+  participant GHC as Contributor's GitHub
+  participant Contributor
+
+  Contributor ->> GHS: 4.2.4 Fork()
+  GHS -->> GHC: Copy()
+  Contributor ->> GHS: 4.2.6 Claim Issue()
+  GHS -->> Contributor: Response
+  Contributor ->> GHC: 4.2.8 Edit()
+  Contributor ->> GHC: 4.2.9 Sync()
+  GHC -->> GHS: Sync()
+  GHS -->> GHC: Update()
+  Contributor ->> GHC: Resolve Conflicts()
+  Contributor ->> GHC: 4.2.11 Commit()
+  Contributor ->> GHS: 4.2.13 Pull Request()
+  note over GHS, Contributor: See Section 5 for merging into main branch
+```
+
+<figure><figcaption>Simplified contribution process</figcaption></figure>
+
+<next-fig/> provides a more advanced process that includes all options discussed in this section.
+
+```mermaid
+%%{init: { 'sequence': { 'mirrorActors': false } }}%%
+sequenceDiagram
+  participant GHS as Source GitHub
+  participant GHC as Contributor's GitHub
+  participant LC as Contributor's Local Copy
+  participant LWD as Contributor's Local Branch
+  participant Contributor
+
+  Contributor ->> GHS: Fork()
+  GHS -->> GHC: Copy()
+  Contributor ->> GHC: Clone()
+  GHC -->> LC: Copy()
+  Contributor ->> GHS: Claim Issue()
+  GHS -->> Contributor: Response
+  Contributor ->> LC: Branch
+  LC -->> LWD: new branch
+  Contributor ->> LWD: Edit()
+  Contributor ->> GHC: Sync()
+  GHC -->> GHS: Sync()
+  GHS -->> GHC: Update()
+  Contributor ->> GHC: Pull()
+  GHC -->> LWD: Update()
+  Contributor ->> LWD: Resolve Conflicts()
+  Contributor ->> LWD: Test()
+  Contributor ->> LWD: Commit()
+  Contributor ->> LWD: Push()
+  LWD -->> GHC: Push()
+  Contributor ->> GHS: Pull Request()
+  note over GHS, Contributor: See Section 5 for merging into main branch
+```
+
+<figure><figcaption>Contribution process for a significant change</figcaption></figure>
 
 ## Prerequisites {.body}
 
@@ -107,10 +166,10 @@ their local computer.
 
 ### Establish an Account on the Repository Hosting Platform {.body}
 
-Those wishing to contribute **shall** fork the repository to their own account.
+Those wishing to contribute **shall** have their own account on GitHub with a user name that can be used to readily identify the contributor per their identity used within the working group.
 
 !!! note
-    All edits are originate within the contributor's account and all
+    All edits originate within the contributor's account and all
     contributions can be traced back to the contributor.
 
 !!! tip "NTCIP Guidance"
@@ -138,16 +197,16 @@ Those wishing to contribute **shall** fork the repository to their own account.
     Press the "Fork" button in the upper-right portion of
     the shared repository's home page (e.g.,
     [https://github.com/&lt;account>/&lt;project>](https://github.com/&lt;account>/&lt;project>)).
-    For complate details, see the [Fork a
+    For complete details, see the [Fork a
     Repository](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo)
     article on GitHub help.
 
 !!! note
-    Each project has a LICENSE.md file that defines its copyright. Projects are encuraged to use CC-BY for documents, BSD 3-clause for code, and the NTCIP MIB copyright for MIBs.
+    Each project has a LICENSE.md file that defines its copyright. Projects are encouraged to use CC-BY for documents, BSD 3-clause for code, and the NTCIP MIB copyright for MIBs.
 
 ### Clone the repository {.body}
 
-The contributor **shall** clone (i.e., copy an instance of) the forked
+The contributor **should** clone (i.e., copy an instance of) the forked
 repository to the local machine where edits are to be made.
 
 !!! note
@@ -157,6 +216,8 @@ repository to the local machine where edits are to be made.
     creates a copy of your forked repository on a local machine. This allows the
     contributor to edit files on a local machine rather than directly in the
     online environment.
+
+    Contributors can edit their copy of the repository directly through the GitHub interface; however, this requires an live connection to the Internet and working on a local machine is often easier for significant edits.
 
 !!! tip "GitKraken Guidance"
     - [GitKraken Guidance](https://help.gitkraken.com/gitkraken-desktop/open-clone-init/#cloning-an-existing-project)
@@ -202,7 +263,7 @@ first issue".
     If an issue is not assigned and it is not labeled with
     "triage", it is generally assumed to be available for anyone to work on.
     Take control of the issue by submitting a comment of `.take` on the selected
-    issue). When an issue is assigned, it will be indicated under the
+    issue. When an issue is assigned, it will be indicated under the
     "Assignees" section of the issue.
 
     ![Issue assignees section on GitHub](_assets/images/issue-assign.png)
@@ -216,17 +277,17 @@ first issue".
     If you get stuck while working on your changes or need other
     clarification, you can always ask for help using the discussions tab of the
     project. For example, you can get help for the ITS Open-Source Process
-    project at the [Discussion
+    project at its [Discussion
     Tab](https://github.com/ite-org/intro/discussions).
 
 ### Create a Branch {.body}
 
-Prior to starting work on a claimed issue, the contributor **shall** create a
-separate branch for all edits related to that singlular issue.
+Prior to starting work on a claimed issue, the contributor **may** create a
+separate branch for all edits related to that singular issue.
 
 !!! note
     Creating a separate branch facilitates tracking of changes and allows
-    easier roll-backs of the project to known states.  
+    easier roll-backs of the project to known states.  It can also be useful to separate tasks if the contributor is working on multiple issues at the same time. However, contributors need to be aware that separate branches that edit the same file will require manual review to properly merge edits.
 
 ### Make Edits {.body}
 
@@ -253,18 +314,18 @@ branch according to project guidelines.
     similar issues at once. For example, multiple grammar issues in
     documentation can be grouped into a single pull request.
 
-### Pull and Merge Updates {.body}
+### Sync and Pull Updates {.body}
 
-Prior to submitting a PR, the contributor **shall** pull the latest updates
-incorporated into the shared project and merge these updates into the
-contributor's working branch.
+Prior to submitting a PR, the contributor **shall** sync the latest updates
+incorporated into the shared project and pull these updates into the
+contributor's working branch, resolving any conflicts as needed.
 
 !!! note
     Because multiple contributors can be working on the same project
     simultaneously, care must be taken to ensure that each contributor has the
     latest version of files prior to proposing their changes to be incorporated
-    into the shared repository. This is done by first pulling any changes from
-    the shared repository into the contributor's forked version and then pulling
+    into the shared repository. This is done by first synchronizing any changes from
+    the shared repository with the contributor's forked version and then pulling
     those changes down into the contributor's local branch. During this process,
     the Git environment will highlight any conflicts (e.g., if the contributor
     and someone else changed the same line of the same file). When this occurs,
@@ -287,8 +348,8 @@ contributor's working branch.
 
 ### Test the Updates {.body}
 
-After pulling and merging the latest updates but prior to submitting the PR, the
-contributor **shall** install any necessary dependencies and test the changes to
+After synchronizing, pulling, and merging the latest updates but prior to submitting the PR, the
+contributor **should** install any necessary dependencies and test the changes to
 ensure that the changes provide the intended operation without any new bugs.
 
 !!! note
@@ -298,6 +359,8 @@ ensure that the changes provide the intended operation without any new bugs.
     You can find the instructions on how to run a project locally in the README
     file or in the contributing guidelines.
 
+    Maintainers have the right to reject any contribution that fails properly compile.
+
 ### Commit the Update {.body}
 
 Prior to pushing the proposed changes to online repository, the contributor
@@ -306,7 +369,7 @@ Prior to pushing the proposed changes to online repository, the contributor
 The contributor **may** perform interim commits during the development of the
 proposed changes.
 
-The contributor **shall** use the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+The contributor **should** use the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
 specification for structuring commit messages.
 
 Here are some examples of Conventional Commit messages:
@@ -326,7 +389,7 @@ Here are some examples of Conventional Commit messages:
 
 Once the contributor has completed the proposed revisions and has created a
 local commit, the contributor **shall** push the proposed changes to the
-contriutor's online repository.
+contributor's online repository.
 
 !!! note
     The changes need to be posted to the online repository so that other
@@ -346,7 +409,7 @@ other failures upon submitting the PR.
 
 !!! note
     In order to ensure that changes made to the shared repository fit with
-    the project plan, follow subittal guidelines, and are free of bugs, it is
+    the project plan, follow submittal guidelines, and are free of bugs, it is
     important that they are reviewed before being incorporated. As such, rather
     than allowing each contributor to push changes to the shared repository
     without any review, they **request** the maintainer to **pull** the proposed
@@ -426,7 +489,7 @@ the `main` branch of the original (`upstream`) repository.
 The best times to update your branches are before you push your changes to the
 remote repository and while you're waiting for your pull request to be reviewed.
 
-In general, it is preferrable to make small incremental changes to the project
+In general, it is preferable to make small incremental changes to the project
 and to provide the updated materials as soon as possible after taking control of
 an issue. The longer the duration between checking out the project and
 submitting a pull request the higher the chance that another contributor will

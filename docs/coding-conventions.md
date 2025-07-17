@@ -1,8 +1,7 @@
 <!-- markdownlint-enable require-heading-annex -->
-<!-- markdownlint-enable require-heading-annex -->
-<div class="annex-3" markdown="1">
+<div markdown="1">
 <style>
-  .annex-3 { counter-set: section 3; }
+    :root { --section-number: 3; --section-style: upper-alpha; }
 </style>
 
 # Coding Conventions {.annex}

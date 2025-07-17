@@ -1,7 +1,7 @@
 <!-- markdownlint-enable require-heading-body -->
-<div class="section-3" markdown="1">
+<div markdown="1">
 <style>
-  .section-3 { counter-set: section 3; }
+    :root { --section-number: 3; --section-style: decimal; }
 </style>
 
 # Commenter Responsibilities {.body}
@@ -13,7 +13,7 @@
 Comments on projects using the ITS Open-Source Process are always welcome, no
 matter how seemingly major or minor. Comments are key to improving products. The
 ITS Open-Source Process is designed to facilitate and encourage users to submit
-comments and is therefore kept simple.
+comments and therefore the commenting process is kept simple.
 
 Within the ITS Open-Source Process, comments can be submitted in either the
 discussions or issues tab of the project repository.
@@ -28,13 +28,13 @@ problems or ambiguities in the project contents, develop consensus on project
 priorities, etc.  
 
 Discussions can be started by anyone at any time. Discussions can result in
-refining the concept of one or more issues before submitting formally submitting
+refining the concept of one or more issues before formally submitting
 them as issues.
 
 ### Issues {.body}
 
 Every project should follow a plan. Within the ITS Open-Source Process, the plan
-is documented by defining issues that are to be addressed, preferrably according
+is documented by defining issues that are to be addressed, preferably according
 to assigned priorities.
 
 The issues tab provides an open forum where any interested party can propose
@@ -46,7 +46,7 @@ issue.
 When an issue is submitted, the project maintainer is responsible for triaging
 the issue. Triaging includes reviewing the issue, determining if the issue fits
 within the project plan, potentially parsing or merging the issue to create
-easily managable tasks, assigning appropriate priority and tags (e.g., bug,
+easily manageable tasks, assigning appropriate priority and tags (e.g., bug,
 ambiguity, editorial) to the issue, and gaining consensus on the approach. This
 process can involve working with others on the project team to ensure consensus
 on the decisions being made.
@@ -87,7 +87,7 @@ The commenter **shall** comply with all instructions on the selected commenting
 template without deleting any fields.
 
 !!! note
-    Includion of all fields facilitates processing of the comment and prevents
+    Inclusion of all fields facilitates processing of the comment and prevents
     automatic rejection. If a section of the template is not applicable, either
     explain why it is not needed or write "N/A".
 
@@ -98,7 +98,7 @@ template without deleting any fields.
     - **Title:** A short descriptive phrase to allow readers to quickly assess the
      comment
     - **Description:** The details of the comment, especially those not captured
-     in other fields of the tempalte. If you wish to work on the issue that you 
+     in other fields of the template. If you wish to work on the issue that you 
      are submitting, you should indicate this in the description. However, you 
      should not start this work until the issue has been triaged to ensure it 
      fits with the overall project plan. When reporting a bug, the description 

@@ -6,7 +6,7 @@ This document is an NTCIP Open-Source NTCIP
 Process, Control, and Information Management document provided as Interim for Field Release (IFR).
 
 Open-source documents are developed using the ITS Open-Source Process, as
-defined in NTCIP IFR-8008. This process provides an open standards development
+defined in NTCIP 8008. This process provides an open standards development
 process that accepts issues reported by the community and resolved by
 peer-reviewed contributions from the community. The open source process
 concludes with the resultant material being approved by the defined approval
