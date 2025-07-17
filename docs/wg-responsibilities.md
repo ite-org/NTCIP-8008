@@ -52,6 +52,13 @@ any SDO adopting the ITS Open-Source Process.
 !!! example "NTCIP Guidance"
     NTCIP 8001 identifies the appropriate WG or committee for NTCIP open-source projects.
 
+## Project Tailoring {.body}
+
+The WG **shall** tailor parameters for the project, including:
+
+- the project schedule
+- the time within which the maintainer is expected to triage and respond to submitted issues and discussion items.
+
 ## Issue Prioritization {.body}
 
 A WG **should** oversee the prioritization of significant issues for each of its
