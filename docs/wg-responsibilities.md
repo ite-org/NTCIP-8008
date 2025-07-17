@@ -56,8 +56,18 @@ any SDO adopting the ITS Open-Source Process.
 
 The WG **shall** tailor parameters for the project, including:
 
-- the project schedule
-- the time within which the maintainer is expected to triage and respond to submitted issues and discussion items.
+1. the project schedule
+2. the time within which the maintainer is expected to triage and respond to submitted issues and discussion items
+3. whether the project is to use the `mike` version control system and, if so, which versions are to be maintained within this system
+
+!!! note
+    Standards should always use a version control system to maintain historic versions of a standard. However, this process can also be used to maintain informative websites that might not need to provide historic versions.
+
+!!! example
+    The list of versions maintained can include:
+    - every release approved by the WG (with latest pointing to the most recently approved version)
+    - every pre-release since the last release
+    - other designated interim releases (e.g., UCD versions)
 
 ## Issue Prioritization {.body}
 
