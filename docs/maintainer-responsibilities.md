@@ -13,15 +13,11 @@ When starting a project, the maintainer **shall**:
 
 ## Overview {.body}
 
-The maintainer for an open-source project fulfills many responsibilities,
-including setting up the project, managing issues, reviewing submittals, and
-leading the development community. In addition, the maintainer is often a
-prime contributor.
+The maintainer for an open-source project fulfills many responsibilities, including setting up the project, managing issues, reviewing submittals, and leading the development community. In addition, the maintainer is often a prime contributor.
 
 ## Establish Repository {.body}
 
-The maintainer **shall** work with the sponsoring SDO to establish the
-open-source repository for the project.
+The maintainer **shall** work with the sponsoring SDO to establish the open-source repository for the project.
 
 !!! example
 
@@ -31,40 +27,30 @@ open-source repository for the project.
 
 ### Issues and Discussions {.body}
 
-The maintainer **shall** ensure that the issues and discussion pages are enabled
-for the ITS open-source project.
+The maintainer **shall** ensure that the issues and discussion pages are enabled for the ITS open-source project.
 
 !!! note
-    Within GitHub, issues are enabled by default but the discussions tab is
-    disabled. To enable, go to the settings tab and select discussions in the
-    general section.
+    Within GitHub, issues are enabled by default but the discussions tab is disabled. To enable, go to the settings tab and select discussions in the general section.
 
 ### Pages {.body}
 
-If the project includes documentation, the maintainer **shall** ensure that
-GitHub pages is enabled for the project.
+If the project includes documentation, the maintainer **shall** ensure that GitHub pages is enabled for the project.
 
 !!! note "GitHub Process"
-    To activate GitHub Pages using MkDocs, create a gh-pages branch. The go to
-    the settings tab and select pages from the left-hand menu. Set Source to
-    "deploy from a branch" and then select the "gh-pages" branch and the /root directory.
+    To activate GitHub Pages using MkDocs, create a gh-pages branch. The go to the settings tab and select pages from the left-hand menu. Set Source to "deploy from a branch" and then select the "gh-pages" branch and the /root directory.
 
 ### Dependabot {.body}
 
-If the project includes code, the maintainer **may** configure Dependabot to
-report issues or create pull requests to update dependencies with security vulnerabilities.
+If the project includes code, the maintainer **may** configure Dependabot to report issues or create pull requests to update dependencies with security vulnerabilities.
 
 !!! note
-    Dependabot is a GitHub feature that monitors the project's dependencies and
-    reports any possible security vulnerabilities. To learn more about this feature,
-    please read through the [GitHub documentation](https://docs.github.com/en/code-security/getting-started/dependabot-quickstart-guide).
+    Dependabot is a GitHub feature that monitors the project's dependencies and reports any possible security vulnerabilities. To learn more about this feature, please read through the [GitHub documentation](https://docs.github.com/en/code-security/getting-started/dependabot-quickstart-guide).
 
 ## Set Up Project Files {.body}
-<!-- markdownlint-disable-next-line MD024 -->
+
 ### Overview {.body}
 
-The maintainer **shall** ensure the following files are provided in the
-repository when starting the project and maintained throughout the project:
+The maintainer **shall** ensure the following files are provided in the repository when starting the project and maintained throughout the project:
 
 - README.md
 - CODE_OF_CONDUCT.md
@@ -76,9 +62,7 @@ repository when starting the project and maintained throughout the project:
 - appropriate PR templates in .github/PULL_REQUEST_TEMPLATE/
 - appropriate saved replies
 
-Additionally, if the site includes documentation, the maintainer **shall**
-ensure the following files are provided in the repository when starting the
-project and maintained throughout the project:
+Additionally, if the site includes documentation, the maintainer **shall** ensure the following files are provided in the repository when starting the project and maintained throughout the project:
 
 - .gitignore
 - mkdocs.yml
@@ -89,20 +73,68 @@ project and maintained throughout the project:
 - overrides/partials/nav.html (changes the navigation heading to be "Contents")
 - overrides/partials/toc.html (changes TOC heading to be the document name)
 
-Finally, the site **shall** include installation guidance, which **may** be
-contained in the README.md file, a separate INSTALLATION.md file, or in project
-documentation.
+Finally, the site **shall** include installation guidance, which **may** be contained in the README.md file, a separate INSTALLATION.md file, or in project documentation.
 
 !!! note "GitHub Help"
-    A template repository containing all of these files, which can be used to
-    initialize new projects, is stored on the [ITE GitHub Site](https://github.com/ite-org/open-source-template).
+    A template repository containing all of these files, which can be used to initialize new projects, is stored on the [ITE GitHub Site](https://github.com/ite-org/open-source-template).
+
+The recommended directory structure for NTCIP projects is as follows:
+
+```tree
+<Repository>
+    ├── .github
+    │   ├── ISSUE_TEMPLATE
+    │   │   └── <Various yml templates as needed>
+    │   ├── workflows
+    │   │   ├── auto_assign.yml
+    │   │   ├── triage_label.yml
+    │   │   └── update_release.yml
+    │   ├── CODEOWNERS
+    │   └── PULL_REQUEST_TEMPLATE.md
+    ├── .vscode
+    │   └── settings.json
+    ├── docs
+    │   ├── images
+    │   │   └── <Various embedded images as needed; preferred format is svg>
+    │   ├── javascripts
+    │   │   └── <Various javascripts as needed (e.g., tablesort.js)>
+    │   ├── mermaid
+    │   │   └── <Auto-generated SVG files produced by Mermaid for PDF file>
+    │   ├── stylesheets
+    │   │   ├── extra.css
+    │   │   └── pdf.css
+    │   ├── acknowledgements.md
+    │   ├── foreword.md
+    │   ├── general.md
+    │   ├── index.md
+    │   ├── introduction.md
+    │   ├── notices.md
+    │   └── <Other md files as needed for left side nav; at least one for each section>
+    ├── images
+    │   └── <Any images needed for GitHub site but not used in actual documentation>
+    ├── overrides
+    │   ├── partials
+    │   │   ├── nav.html
+    │   │   └── toc.html
+    │   └── main.html
+    ├── resources
+    ├── templates
+    │   ├── main.html
+    │   └── pdf-styles.scss
+    ├── .gitignore
+    ├── .markdownlint.json
+    ├── CODE_OF_CONDUCT.md
+    ├── CONTRIBUTING.md
+    ├── LICENSE.md
+    ├── README.md
+    ├── SECURITY.md
+    ├── markdown-custom.js
+    └── mkdocs.yml
+```
 
 ### Readme.md File {.body}
 
-The README.md file **shall** contain an introduction to the open-source project.
-A good readme file should be clear, concise, up-to-date, and detailed. This file
-is located in your root directory and is displayed as the homepage of the
-repository within GitHub.
+The README.md file **shall** contain an introduction to the open-source project. A good readme file should be clear, concise, up-to-date, and detailed. This file is located in your root directory and is displayed as the homepage of the repository within GitHub.
 
 The README.md file **shall** contain the following information:
 
@@ -115,16 +147,12 @@ The README.md file **shall** contain the following information:
 - tech and tools used in the project
 - link to the code of conduct
 - link to discussion forum for the project
-- link to the issues page for the project and the types of issues accepted for
-the project
+- link to the issues page for the project and the types of issues accepted for the project
 - link to the contributing guidelines
 - link to the open source license
 
 !!! note
-    A README file is written in the [Markdown](https://www.markdownguide.org/)
-    language, a popular language used in open source documentation like READMEs.
-    The readme file does not use any of the special codes introduced by MkDocs or
-    Materials for MkDocs.
+    A README file is written in the [Markdown](https://www.markdownguide.org/) language, a popular language used in open source documentation like READMEs. The readme file does not use any of the special codes introduced by MkDocs or Materials for MkDocs.
 
 !!! example "Examples of good README files"
 
@@ -135,11 +163,9 @@ the project
 
 ### Installation Guidance {.body}
 
-The installation guidance **may** be contained within the README.md file (e.g.,
-if it is simple), be a separate file, or reference a section within the project documentation.
+The installation guidance **may** be contained within the README.md file (e.g., if it is simple), be a separate file, or reference a section within the project documentation.
 
-This guide identifies the tools and technology used by the project and includes
-instructions for the following:
+This guide identifies the tools and technology used by the project and includes instructions for the following:
 
 - forking the repository
 - cloning the repository
@@ -148,9 +174,7 @@ instructions for the following:
 - setting up the database, if applicable
 - running the project locally
 
-The best way to test your guide is by setting up the project locally using your guide.
-If you encounter issues getting your project to work, you will discover it quickly
-and can update the documentation to add or clarify the missing piece.
+The best way to test your guide is by setting up the project locally using your guide. If you encounter issues getting your project to work, you will discover it quickly and can update the documentation to add or clarify the missing piece.
 
 !!! example
     [OpenSauced Contributing Guidelines](https://opensauced.pizza/docs/contributing/introduction-to-contributing/)
@@ -424,6 +448,30 @@ to the navigation menu on the right side of the screen.
 
 !!! example
     [Toc.html file for ITS Open-Source Process](https://github.com/ite-org/NTCIP-8008/blob/main/overrides/partials/toc.html)
+
+## Branch Management
+
+The maintainer **shall** coordinate with the WG to determine when to use separate branches for the project.
+
+The maintainer **shall** store the current release in the `main` branch.
+
+The maintainer **shall** store the documentation website in the `gh-pages` branch.
+
+For projects that only display a single release (e.g., a website project), the maintainer **may** use the `main` branch for all updates.
+
+For projects that have not yet released version 1.0.0, the maintainer **may** use the `main` branch for all updates.
+
+For projects that use provide multiple releases on the website and have already released version 1.0.0 or later:
+
+1. the maintainer **shall** use a branch other than `main` or `gh-pages` for any version under development (including pre-releases)
+2. the maintainer **should** use a separate branch for each development effort that has started but is not expected to be included in the next official release
+3. the maintainer **may** use a separate branch for distinct development efforts
+4. the maintainer **should avoid** using separate branches for separate development efforts that are expected to modify the same file
+
+The maintainer **should** consider dividing a file into distinct parts when it needs to be modified by separate development efforts.
+
+!!! note
+    Modifying the same file in different branches will result in a need to manually merge the changes, which creates extra work. In cases, this can be avoided by dividing the file into distinct parts. In other cases, this can be difficult to achieve and manual merging will either be required or the longer-term development effort delayed until the first development effort has completed its updates.
 
 ## Define Project Structure {.body}
 
@@ -849,7 +897,7 @@ versioned directories in the gh-pages branch.
               python-version: '3.x'
 
     - name: Install dependencies
-            run: |
+            run: │
               pip install mkdocs-material
               pip install weasyprint
 
@@ -857,7 +905,7 @@ versioned directories in the gh-pages branch.
             run: mkdocs build
 
     - name: Generate PDF
-            run: |
+            run: │
               weasyprint site/index.html site/docs.pdf
             env:
               WEASYPRINT_BASEURL: 'https://yourusername.github.io/repository-name/'

@@ -272,7 +272,13 @@ Standard markdown supports tables; Material for MkDocs allows for extending this
 !!! warning
     When rendered to a PDF, the ability to sort table rows is lost.
 
-## Mermaid diagrams {.annex}
+## Figures
+
+## Generic Figures
+
+Figures are can be included on a page by using the code format `![Example Title](example-file.svg)`. To ensure that the figure is centered, it can be wrapped in a `figure` element (e.g., `<figure>![Example Title](example-file.svg)</figure>`).
+
+### Mermaid diagrams {.annex}
 
 Material for MkDocs supports Mermaid diagrams. Mermaid allows for relatively simple text-based statements to define diagrams that follow well-defined rules, such as UML diagrams, block diagrams, etc.
 
@@ -327,6 +333,14 @@ Material for MkDocs supports Mermaid diagrams. Mermaid allows for relatively sim
 
 !!! warning
     With the current PDF generator, Mermaid diagrams need to be converted to SVGprior to including in the file.
+
+### Figure Caption
+
+Figures should be followed with a caption. Captions can be added with the following code: `<figure><figcaption>Sample caption</figcaption></figure>`. The `figcaption` element will ensure that the figure is preceded with the correct section-figure number (e.g., `Figure 3-6:`).
+
+### Referencing Figure Numbers
+
+The next figure number can be included in the text preceding the figure with the following code: `<next-fig/>`.
 
 ## Additional features {.annex}
 

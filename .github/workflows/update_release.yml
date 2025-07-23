@@ -28,8 +28,10 @@ jobs:
           sudo apt install -y weasyprint
           pip install mkdocs-material pymdown-extensions
           pip install mkdocs-git-revision-date-localized-plugin
+          pip install mkdocs-mermaid2-plugin
           pip install mkdocs-to-pdf
           pip install mike
+          npm install -g @mermaid-js/mermaid-cli
 
       # Step 4: Get release tag, fall back to current date and time if no tag exists
       - name: Get release tag or use date

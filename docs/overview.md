@@ -14,7 +14,7 @@ It might be tempting to think that managing an open-source standard can be achie
 
 - Standards are used for deployments that can remain in operation for decades. It is important that industry professionals can quickly access any prior released version of the standard so that they can understand devices that were previously deployed. General-purpose word processors generally only deal with one version of a document while the GitHub environment recommended by this document allows a complete version control history that allows users to display any archived version of the document.
 
-To overcome these challenges, this document recommends using a `git` environment (in the case of NTCIP, one hosted at GitHub) that leverages markdown and Material for MkDocs as the primary documentation environment.
+To overcome these challenges, this document recommends using a `git` environment (in the case of NTCIP, one hosted at [GitHub](https://github.com)) that leverages [markdown](https://www.markdownguide.org/cheat-sheet/) and [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/reference/) as the primary documentation environment.
 
 Managing a project within this open-source environment involves four major activities as described in the following clauses:
 
@@ -49,31 +49,17 @@ sequenceDiagram
 
 <figure><figcaption>Establish a new open-source project</figcaption></figure>
 
-When someone identifies a need for a new shared resource (e.g., industry
-standard, reusable code, etc.) within ITS, they can develop a proposal and
-submit it to an appropriate committee. The
-proposal can be relatively simple (e.g., a statement of goals and structure) or
-a complete prototype.
+When someone identifies a need for a new shared resource (e.g., industry standard, reusable code, website, etc.) within ITS, they can develop a proposal and submit it to an appropriate committee. The proposal can be relatively simple (e.g., a statement of goals and structure) or a complete prototype.
 
-If the proposal is accepted by the committee, the committee will assign a working group and one or more
-maintainers who will become responsible for leading the project. This will often
-include the individual proposing the project. A maintainer will establish the
-open-source project repository on the standards development organization's
-open-source website (e.g., GitHub account) and upload the initial project files.
+If the proposal is accepted by the committee, the committee will assign a working group and one or more maintainers who will become responsible for leading the project. This will often include the individual proposing the project. A maintainer will establish the open-source project repository on the standards development organization's open-source website (e.g., GitHub account) and upload the initial project files.
 
 !!! note
     The maintainer is a key role in the project. If the maintainer is not available for any reason, it can delay the triage of identified issues. It is the responsibility of the committee to ensure that the maintainer either has sufficient resources or has sufficient backup to provide a high degree of confidence that there is not an artificial bottleneck when contributors wish to address problems.
 
-Once the initial upload is provided, the maintainer will work with the working
-group to refine the vision for the project and establish the set of baseline
-issues as a part of the project plan. The project plan will also define the
-planned release schedule, which can be based on a calendar schedule, reaching
-milestones, or achieving other metrics. Members of the WG are encouraged to
-submit their issues directly so that the originator can be properly captured and
-to encourage WG members to become familiar with the process; however, the
-Maintainer can submit comments on the behalf of others, if needed.
+Once the initial upload is provided, the maintainer will work with the working group to refine the vision for the project and establish the set of baseline issues as a part of the project plan. The project plan will also define the planned release schedule, which can be based on a calendar schedule, reaching
+milestones, or achieving other metrics. Members of the WG are encouraged to submit their issues directly so that the originator can be properly captured and to encourage WG members to become familiar with the process; however, the Maintainer can submit comments on the behalf of others, if needed.
 
-The Maintainers are also responsible for properly managing the GitHub registry structure according to project policies. For example, this might include establishing a `draft` branch and ensuring all contributions are merged into this branch as appropriate. It might also define rules on when to tag committed versions as a release or pre-release and ensuring that GitHub actions properly run to generate updates to the website with all appropriate information.
+The Maintainers are also responsible for properly managing the GitHub repository structure according to project policies. For example, this might include establishing a `draft` branch and ensuring all contributions are merged into this branch as appropriate. It might also define rules on when to tag committed versions as a release or pre-release and ensuring that GitHub actions properly run to generate updates to the website with all appropriate information.
 
 The goal should be to have both the generated website and the GitHub page to default to the latest approved version (if an approved version exists) and should allow viewing any prior formal release or the most recent working draft (i.e., pre-release). Other versions can be provided as well at the WG's direction. The generated website should include a banner at the top of each page indicating the status of the currently displayed version, unless it is the latest approved version.
 
@@ -204,20 +190,19 @@ is easier to manage and distribute.
 
 Once all expected changes have been made to fulfil a defined stage in the
 project plan, the maintainer will follow the project's defined process for
-obtaining approval of the current draft as a formal release (e.g., v01.01.03)
+obtaining approval of the current draft as a formal release (e.g., v1.1.3)
 from the identified approval group (e.g., perhaps selected experts for a patch, the WG for a new feature, or the parent committee for non-backwards compatible changes). The exact approval group is defined in the project's plan.
 
 If approval is received, the maintainer:
 
 - documents changes in release notes (if not already included);
-- if it is a full release, moves the version to the main branch;
-- tags the current version as a new release (e.g., "v01.01.03"); and
-- provides a downloadable archive.
+- if it is a full release, moves the version to the main branch; and
+- tags the current version as a new release (e.g., "v1.1.3").
+
+Assuming the maintainer has properly configured the repository with the necessary GitHub action, defining a new release tag will automatically generate an update to the website and a new PDF. Further, if [`mike`](https://github.com/jimporter/mike) is included in the configuration, the generated website will make previous versions of the website (and PDF) available from a dropdown menu.
 
 If approval is not received, the maintainer ensures that all of the identified issues are properly recorded on the issues page and continues the process of addressing issues through contributions.
 
-This collaborative process allows open-source projects to evolve through
-contributions from users and developers worldwide, promoting continuous
-improvement while ensuring transparency and accountability.
+This collaborative process allows open-source projects to evolve through contributions from users and developers worldwide, promoting continuous improvement while ensuring transparency and accountability.
 
 </div>
