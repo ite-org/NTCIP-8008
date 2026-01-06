@@ -1,7 +1,7 @@
 #
 
 <div style="text-align: center; font-style: italic; font-weight: bold;">
-  Working Group Draft
+  Interim for Field Release (IFR)
 </div>
 
 <div style="text-align: center; font-size: 1.5em; font-weight: bold;">
